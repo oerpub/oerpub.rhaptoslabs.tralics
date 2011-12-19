@@ -1,0 +1,705 @@
+<!-- -*- html -*- -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<!-- $Id: ChangeLog,v 2.299 2011/06/28 07:45:16 grimm Exp $ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+  <meta name="Author" content="José Grimm"/>
+  <title>ChangeLog for TRALICS </title>
+  <link rel="stylesheet" href="tralics.css"/>
+  <meta name="keywords" content="latex xml translator"/>
+</head>
+<body>
+
+<h1> ChangeLog for the Tralics software</h1>
+<p>See file <a href="ChangeLog0.htm">Old ChangeLog</a> for older versions.
+Patches to current version (2.14) start <a href="#v2-14">here</a>
+</p>
+
+
+<h3>History</h3>
+<ul>
+
+<li> <a href="ChangeLog0.htm#v2-8">Version 2.8, released 01-08-2006.</a> </li>
+<li> <a href="#v2-9">Version 2.9, released 26-10-2006.</a> </li>
+<li> <a href="#v2-9-4">Version 2.9.4 released 18-02-2007.</a>  </li>
+<li> <a href="#v2-10">Version  2.10 released 02-05-2007.</a>  </li>
+<li><a href="#v2-11">Version 2.11 released 29-11-2007.</a>  </li>
+<li><a href="#v2-11-4">Version 2.11.4 released 05-02-2008.</a>  </li>
+<li><a href="#v2-11-5">Version 2.11.5 released 05-02-2008.</a>  </li>
+<li><a href="#v2-11-6">Version 2.11.6 released 22-02-2008.</a>  </li>
+<li><a href="#v2-11-7">Version 2.11.7 released 04-04-2008.</a>  </li>
+<li><a href="#v2-11-8">Version 2.11.8 released 15-04-2008.</a>  </li>
+<li><a href="#v2-12">Version 2.12 released 21-04-2008.</a>  </li>
+<li><a href="#v2-12-4">Version 2.12.4 released 20-06-2008.</a>  </li>
+<li><a href="#v2-12-6">Version 2.12.6 released 04-07-2008.</a>  </li>
+<li><a href="#v2-13">Version 2.13 released 20-07-2008.</a>  </li>
+<li><a href="#v2-13-1">Version 2.13.1 released 03-10-2008.</a>  </li>
+<li><a href="#v2-13-3">Version 2.13.3 released 27-10-2008.</a>  </li>
+<li><a href="#v2-13-4">Version 2.13.4 released 13-11-2008.</a>  </li>
+<li><a href="#v2-13-7">Version 2.13.7 released 05-10-2009.</a>  </li>
+<li><a href="#v2-13-7">Version 2.13.7 released 26-10-2010.</a>  </li>
+</ul>
+
+
+
+<h2 id="v2-9">Version 2.9</h2>
+<ol>
+ <li> <b> [2006-10-26, version 2.9]  </b>
+  <br/>Corrected implementation of <samp>\chardef</samp> in math; added
+    <samp>\chardef</samp> 
+  <br/>Feature: Ignore <samp>\vskip2cm</samp> and <samp>\vspace{2cm}</samp> in
+     math mode
+   <br/> Feature: No space after <samp>\ifdim</samp>, in the transcript of 
+     <tt>+scandimen for \ifdim &gt;12.0pt</tt> 
+   <br/>Bug fix: Correct unit in the transcript of <samp>\mkern3mu</samp>
+   <br/>Added Bibtex extensions
+   <br/>Bug fix: Tilda added if empty verbatim line</li>
+ <li> <b>[2006-11-14, version 2.9.1]</b>
+   <br/>Bug fix: It is possible to insert underscore in file names defined
+    by <samp>\InputIfFileExists</samp> (T. Bouche) 
+   <br/>Bug fix: confusion between masterthesis and mastersthesis in 
+     <tt>make_names</tt> (T. Bouche) 
+   <br/>Bug fix: Switch 'IUCLC' removed in function set_termio, because it
+   does not  work on Mac and testing whether we are on a mac is non-trivial.
+    (Pb signaled by David Pichardie)</li>
+ <li> <b>[2006-11-28, version 2.9.2]</b>
+   <br/>Feature: OS type is printed on the log file, works correctly on macintel
+    (N. Roussel)</li>
+ <li> <b>[2006-12-10, version 2.9.3]</b>
+  <br/>(txbib) Bug fix: second argument of <tt>make_new_entry</tt> was ignored
+   (Theo Papadopoulo)
+   <br/>Feature: In the raweb case, apics_all2006.bib is read (if it exists)
+  instead of apics2006.bib, apics_refer2006.bib, apics_foot2006.bib
+   <br/> Bug fix: Additional fields are also copied in crossref
+   <br/> Feature <tt>foot_prefix</tt> is now useless in biblio
+   <br/> [2007-01-04] (txclasses) Bug fix, babel options were empty
+   <br/> [2007-01-14] Bug fix: Spaces normalized in <samp>\index</samp>
+   <br/> [2007-01-17] Bug fix: Underscore chars allowed in team name 
+       (Laurent Pierron)
+   <br/> [2007-01-29] Added math commands <samp>\triangleq\Cap\Cup</samp>
+   <br/> Changed <samp>\allowbreak</samp>.
+   <br/> Added <samp>\m@th</samp>
+   <br/> [2007-02-11] Added Configuration <tt>mfenced_separator_val="foo"</tt>
+   <br/> Added option <tt class='verb'>-(no)math_variant</tt>.
+   <br/> You can say: <tt class='verb'>tralics -param foo bar</tt>.
+   <br/> Feature: There are 15 math fonts, corresponding to the 13 MathML variants.
+   (plus normal and upright). In nomathml mode, they are hacked.
+   <br/> Change: the name in a <tt>math</tt> is a C++ string instead of char*; 
+   it holds the first argument of a  <samp>\mathbox</samp>.
+   <br/> Added <samp>\mathci \mathcn \mathcsymbol</samp>
+   <br/> Change: you can say <samp>\mathmi[foo][bar]{gee}</samp>, translates to
+   <tt class='txt'>&lt;mi foo='bar'&gt;gee&lt;/foo&gt;</tt>.
+   <br/> Feature: Parses <samp>\char`\$</samp> the same as <samp>\chardef</samp>
+   in math mode. 
+   <br/> Feature: A single <tt class='txt'>&lt;mn&gt;</tt> element is created for a sequence of digits
+   <br/>[2007-02-16] Feature: Space character allowed in an environment name
+   <br/> Feature: Font size commands allowed in <samp>$x\mbox{\small$y$}z$</samp>
+   <br/> Bug fix: char U+0327 is not special in math mode, since it's not
+   ASCII. Use <samp>\times</samp>.
+   <br/> Feature: Translation of <samp>\right.</samp> is empty delimiter unless
+   <tt class='verb'>-compatibility</tt> mode.
+   <br/> Bug fix of <samp>\let\A B $\A$</samp> dumps no core any more.
+   <br/> Math mode change: <samp>\vskip</samp> converted
+   into <samp>\vspace</samp>, although this is useless.
+   <br/> Change: No space in translation of <samp>A \\[2mm] B</samp>.
+   <br/> Bug fix. In math mode <samp>\end{foo}</samp> inserts a closing brace only if
+   the begin inserted an opening brace (i.e., not if the begin was created
+   outside math mode). Bug signaled by Thierry Bouche.
+ </li>
+ <li  id="v2-9-4"> <b>[2007-02-18, version 2.9.4]</b>
+    <br/> Improved the test when opening a file.
+    <br/> Option <tt class='verb'>bad minus</tt> added
+    <br/> Bug fix: In the case <samp>$1^23$</samp> the superscript is 2 (T. Bouche)
+   <br/> Bug fix in <tt>math_p::find_paren2</tt>; a group is big if it
+    contains a big element. Gives better placement of <tt class='txt'> &lt;mrow&gt;</tt>.
+  <br/>Added <samp>\mathfontproperty</samp>
+  <br/>Added <samp>\colon</samp> as <tt class='txt'>&lt;mo lspace='0'&gt;:&lt;/mo&gt;</tt>
+  <br/>Changed <samp>\def\root#1\of{\@root}</samp>
+  <br/>Corrected translation of <samp>\widehat</samp> (invalid character code)
+  <br/>Added <samp>\operatornamewithlimits</samp>
+  <br/>Added <samp>\qopname</samp>
+  <br/>Added: you can say <samp>$\left/ !\right\backslash$</samp>
+  <br/>Changed implementation of <samp>\mathop...\limits</samp>
+  <br/>Bug fix: Translation of <samp>$\big(xy$</samp> was empty
+  <br/>Bug fix: Translation of <samp>$\big(x\big\}$</samp> has mfenced,
+   because <samp>\{\}</samp> converted to <samp>\lbrace\rbrace</samp>
+  <br/> Bug fix: less-than  and greater-than behave like <samp>\langle, \rangle</samp>
+  <br/> Feature: Exchanged execution order of cv3 and cv4; this gives big delimiters in
+      <samp>$\bigl(\sum \bigr )^2$</samp>.
+  <br/> Bug fix:  Math style computation corrected: Exercise 17.15 gives correct answer.
+  <br/> Bug fix: Boolean <samp>\ifinner</samp> gives correct answer in math mode
+  <br/> Bug fix: Command <samp>\pmod</samp> produces inserts 18mu or 8mu  of space
+    depending on the mode (display or not).
+  <br/> Bug fix: Translation of <samp>\iff</samp> the same as 
+      <samp>\Leftrightarrow</samp>
+  <br/> Changed translation of  <samp>$\rm x\bf 2$</samp>.
+  <br/> Added  <samp>\@Vert</samp>, that is the same character as 
+     <samp>\parallel</samp>, using this as delimiter. All delimiters work now.
+  <br/> Change: <samp>\overbrace\underbrace</samp> produce a large operator that 
+     can have limits. 
+   <br/> Fixed translation of <samp>$\mathmo{&lt;=}$</samp>
+  <br/> Added <samp>\phantom</samp>
+  <br/> Change: Automatic position of mrows: not in case open big close, 
+    but in case Big open close.  
+  <br/> Added: <samp>\ImaginaryI,\ExponentialE,\DifferentialD, \InvisibleTimes,
+    \ApplyFunction,\InvisibleComma</samp>
+  <br/> Added  <samp>\cellattribute\rowattribute</samp>
+  <br/> Bug fix: Multline environment: all equations are in display style, first and
+  last are correctly handled.
+  <br/> Added <samp>\tag</samp> and variants
+  <br/> Added environment gather; commands 
+   <samp>\xleftarrow \xrightarrow</samp> optional argument added.
+  <br/> Added <samp>\lvert \lVert \rvert \Rvert \cfrac \accentset 
+   \undertilde \overleftrightarrow \underleftrightarrow
+  \arrowvert \bracevert \Arrowvert
+   </samp>; and a lot of other commands also.
+  <br/> Bug fix: Xmatrix was wrong for X=b, B or V!
+  <br/> Implemented commutative diagrams.
+  <br/> Added <samp>\scanupdown</samp>; needed for <samp>\sideset</samp>.
+  <br/> Feature: phi and varphi swapped.
+  <br/> Bug fix: Width of normal space in math mode changed from 6pt to 4pt
+  <br/> Changed definition of prime character.
+  <br/> Changed definition of <samp>\asymp</samp> , is now asympeq, U+224D.
+  <br/> Allow font changes in text in math.
+  <br/> Allow commands like <samp>\hfill</samp> for horizontal placement of
+  fractions or arrays.  
+  <br/> Phantom and smash hard-coded.
+  <br/> Sideset command hard-coded.
+ </li>
+ <li>
+   [2007/04/28] <samp>\relax</samp> commands retained in the math tree.
+  <br/> Mathfonts are groups now.
+  <br/> Added option <tt class='verb'>nozerowidthelt</tt>.
+  <br/> Commands <samp>\begingroup \endgroup</samp> allowed in math mode 
+    and used for font switch. 
+ </li>
+</ol>
+<h2 id="v2-10">Version 2.10</h2>
+<ol>
+  <li> <b>[2007-05-02, version 2.10]</b>
+  <br/> Added options <tt class='verb'>leftquote</tt>
+    and <tt class='verb'>rightquote</tt>. Indicate how to translate character
+    left and right quote in non-verbatim text mode.
+  <br/> Feature: if option <tt class='verb'>usequotes</tt> is selected,
+    doubles quotes give &lt;&lt; or &gt;&gt; in French language. 
+  <br/>Feature: Double left quote, and double right quote translated into
+    &#x201d; and &#x201c; (U+201D, U+201C).
+  <br/> [2007-05-04] Feature: First token of a math expression removed if it is
+   <samp>\relax</samp>.
+  <br/>[2007-05-17] Feature: More characters allowed in math mode.
+  <br/> Changed translation of <samp>\upsilon</samp> and <samp>\Upsilon</samp>
+   is to <tt class='txt'>&amp;upsilon;</tt>
+   and <tt class='txt'>&amp;Upsilon;</tt>  
+  <br/> Space added after commands in the output of <samp>\showthe</samp>, 
+  <samp>\showtokens</samp>. 
+  <br/> [2007-06-01] <samp>\protected</samp> commands no longer considered as
+   <samp>\outer</samp>. 
+  <br/> Corrected implementation of <samp>\marks</samp>.
+  <br/> Made <samp>\mathbbm</samp> an alias to <samp>\mathbm</samp>.
+  <br/> In math mode <samp>\char`\&amp;</samp> produces
+    <tt class='txt'>&amp;amp;</tt> (and not <tt class='txt'>&amp;</tt>).
+  </li>
+  <li> <b>[2007-07-06, version 2.10.1]</b>
+   <br/> Feature: <i>Tralics</i> counts the number of HDR
+   <br/> (Raweb) Feature: It is required that you say if there are HDRs in the Raweb.
+   <br/> (Raweb) Syntax change allows <samp>\UR{Sophia, Rocquencourt}</samp>
+   <br/> (Raweb) Added  <samp>\ResearchCentreList</samp> 
+      as alias to <samp>\UR</samp>.
+   <br/> (Raweb) Semantic change: Optional argument `Location' added between
+   `Lastname' and before Catpro in <samp>\pers</samp> in <samp>catperso</samp>. 
+   Mandatory for multi-located teams. 
+   <br/> (Raweb) New Location arg can have a default value.
+   <br/> (Raweb) Feature: File <tt class='verb'>apics2007.ult</tt> not loaded when
+   compiling the ra. 
+   <br/> (Raweb) Feature: When <i>Tralics</i> generates a tex file for the RA
+   (option <tt class='verb'>-ps</tt>), it uses latin1 as encoding.
+   <br/> (Raweb) Feature: Team and section titles printed using terminal encoding.
+   <br/> Bug fix: Tralics should works again for RA 2005 (bibliography).
+   </li>
+  <li id="v2-10-2"> <b>[2007-07-16, version 2.10.2]</b>
+    <br/> (Raweb) Feature: <samp>\TeamHasHdr</samp> is optional. (request by Vercoustre)
+    <br/> (Raweb)
+    Feature. Removed <tt class='verb'>all</tt>, <tt class='verb'>none</tt> as
+    optional argument for Location argument in <samp>\pers</samp>.  
+    </li>
+   <li id="v2-10-3"> <b>[version 2.10.3]</b>
+   <br/> New implementation for ra2007.  Details follow.
+    Nothing has changed if producing postscript, or testing the thing.
+   <br/> File <tt class='verb'>hyperref.cfg</tt> no more constructed because data not remembered.
+   <br/> (Raweb) Feature: You cannot say <samp>\UR{\RCSophia}</samp>
+   <br/> (Raweb) Bug fix: Commands from config file not inserted when producing PS
+   <br/> Feature: <tt class='verb'>tralics --help</tt>: Order of options changed.
+   <br/> Redefinition of <samp>\not</samp> in amsmath.plt removed
+   <br/> Feature: Html attribute no more computed for modules in RA2007.
+   <br/> Feature: No restriction on module names (only uniqueness required).
+   <br/> Bug fix: <tt>buffer::slash_separated</tt> does <tt>advance()</tt> in case of success.
+   <br/> Feature: In the config file, themes can be given using uppercase letters.
+   <br/> Changed error signaling for the raweb in some cases.
+    </li>
+   <li id="v2-10-4"><b>[version 2.10.4, 2007-07-23]</b>
+   <br/> Bug fix: No error in case <samp>\global\relax\def\foo{}</samp> 
+       (following a remark by Charpentier)
+   <br/> Added <tt>fullsection_vals</tt> as replacement for <tt>section_vals</tt>
+   <br/> Change: section titles defined by config file are put in the XML
+   <br/> Changed DTD to raweb7.dtd
+   <br/> Allow multiline variables in a config file
+   <br/> Added automatical call to <samp>\rawebstartdocument</samp> 
+   <br/> Change: Command <samp>\url</samp> adds <tt class='txt'>&lt;allowbreak&gt;</tt>
+   <br id="v2-10-5"/> <b>[version 2.10.5, 2007-08-02]</b>
+   <br/> Feature: Variable <tt>hacknotitle</tt> set to false by <tt>run_simple_ra</tt>
+   <br/> Feature: Implicit group added whenever <tt>T_arg1</tt> is called.
+   <br/> Function <tt>T_arg1*</tt> inlined (title was not printed on the tty).
+   <br/> Removed option <tt class='verb'>hacknotitle</tt> from the command list.
+    </li>
+   <li id="v2-10-6"> <b>[version 2.10.6, 2007-09-27] </b>
+    <br/> Changed exit status of readline to 1.
+   <br/> Change: No <tt class='txt'>&lt;allowbreak&gt;</tt> added at the end of URL.
+   <br/> Re-implemented <samp>\ensuremath</samp> as a macro (Req. Connexions).
+   <br/> Bug fix. Added some code to raweb-uni.sty that redefines color 
+      (code commented out in pdftex.def for version 1.40)
+   <br/> Added a <tt class='verb'>-V, -verbose-doc</tt> option.
+   <br/> Change trace of <samp>\let\oe\OE</samp>
+   <br/> Re-implemented <samp>\MakeUppercase</samp>, 
+       <samp>\MakeLowercase</samp>. Case change commands allowed in Math
+   mode. (connexions) 
+   <br/> Bug fix in lc/uc pair for <samp>\NG</samp>
+   <br/> Feature allows <samp>$\mbox{(\ref{x})}=\eqref{x}$</samp>
+   <br/> Bug fix: Command <samp>\ensuremath</samp>, wrong placement
+   of <samp>\relax</samp> 
+    </li>
+   <li id="v2-10-7"> <b>[version 2.10.7, 2007-11-03]</b>
+   <br/> (txmain) Bug fix. Year flag better checked.
+   <br/> (txmain) Feature: Main file argument of Tralics can contain slashes.
+   <br/> Bug fix. End verbatim algorithm changed
+   <br/> Bug fix. Better trace in case of too many errors
+   <br/> Bug fix. Labels were lost in nomathl mode
+   <br/> New feature. <tt>textcase</tt> package implemented
+   <br/> [2007-11-09](txbib) Silly bug in find_lower_case. (Wagner)
+   <br/> (txbib) Feature: something like <samp>@book(foo,...}</samp> works.
+   </li><li id="v2-10-8"> <b>[version 2.10.8, 2007-11-12]</b>
+   <br/> Feature: On the fly encoding implemented 
+   <br/>Feature: Changed <samp>\protect</samp> to <samp>\relax</samp>
+   <br/>(txmath) Bugfix. <tt>M_cv1</tt> handles <samp>\le</samp> the same as <samp>=</samp>
+   <br/>(txmath) Feature: implemented the fencing algorithm. 
+   <br/> Bug fix. Wagner's math examples produce symmetric operators.
+   <br/>New Command <samp>\tracingmath</samp> controls verbosity of the LBR
+   algorithm  
+   <br/> Feature: Math trace holds ^^J instead of newline.
+   <br/> Added <samp>\@curmathfont</samp>
+   </li>
+   <li><b>[version 2.10.9, 2007-11-21] </b>
+   <br/> Removed general purpose tokens from math trace.
+   <br/> Implemented special active math characters
+   <br/> Implemented Package <tt>braket</tt>
+   <br/> Error recovery enhanced in math mode.
+   <br/> (txcheck)  Bug fix,  if multi-line data has to be parsed
+   <br/> Bug fix. <tt>flush_buffer</tt> added at start
+   of <samp>\citation</samp> (MP Durollet)
+ </li>
+</ol>
+<h2  id="v2-11">Version 2.11</h2>
+<ol>
+  <li> <b>[2007-11-29, version 2.11]</b>
+    <br/> Changed type of Char 160 to active, as nobreakspace
+    <br/> Re-edited ChangeLog 
+    <br/> [2007-12-05] Removed <tt>cur_cs</tt>.
+    <br/> Single <tt>check_outer_validity</tt> function.
+    <br/> Bug fix: invalid token better handled.
+    <br/> Added the html package; moved some functions there
+    <br/> Allow optional star after <samp>\tableofcontents</samp>
+    <br/> Allow underscore in environment names
+  </li>
+  <li> <b>[2007-12-06, version 2.11.1]</b>
+    <br/> Implemented <tt>keyval</tt> package and a lot of others
+    <br/> Added <samp>\tralics@split</samp> and <samp>\define@key</samp>
+    <br/> [fixme] Double sharp in <samp>\@ifnextchar{}{}</samp>
+    <br/> Made utf8x an alias for utf8 in inputenc.
+    <br/> Added command <samp>\pop@stack</samp>
+    <br/> Added commands <samp>\@temptokena</samp> and friends 
+    <br/> Changed order of assignments in <samp>\tracingall</samp>
+    <br/> Virtual end-of-item added to minipage.
+  </li>
+  <li> <b>[2007-12-19, version 2.11.2]</b>
+    <br/> Split the file <tt>txparser</tt> in two parts
+    <br/> Added <samp>\@onelevel@sanitize</samp>
+    <br/><b>[2007-12-22]</b>
+    <br/> Renamed <samp>\filbreak</samp> (removing one l)
+    <br/> Added <samp>\loggingall</samp> as synonym to <samp>\tracingall</samp>
+    <br/> Moved html tests from file torture to testhtml
+    <br/> Implemented <samp>\listfiles</samp>
+    <br/> <b>[2007-12-26]</b> Option 
+    xml_font_pack_att added in configuration files
+    <br/> Added commands
+    like <samp>\fontencoding</samp>, <samp>\usefont</samp> <samp>\selectfont</samp>
+    <br/>Added <samp>\ignorespaces</samp> after <samp>\put</samp>
+    and <samp>\multiput</samp>
+    <br/> New file txtrees.h added
+    <br/> Multiple index added
+    <br/> Split file tralics.C in two parts, txtoken2.C holds the hashtab Ctor
+    <br/> Added newline or spaces when printing <samp>\message</samp>
+    <br/> Added <samp>\@addtoreset</samp>
+    <br/> Made <samp>^^L</samp> same as <samp>\outer\par</samp>
+    <br/> Fixed <samp>\noexpand^^L</samp> 
+    <br/> Added a function <tt>T_next_arg_local();</tt>
+    <br/> Re-implemented allocation mechanism using LaTeX method
+    <br/> Made <samp>\@ifundefined</samp> expandadle
+    <br/> Split txvars.h in two parts, adding txcmd.h
+    <br/> Enhanced <tt>hash_table::is_defined</tt>, sets cur token.
+    <br/> Added <tt>get_mac_value</tt> 
+    <br/><b>[2008-01-23, version 2.11.3]</b>
+    <br/> Postprocessing of subfigure depends on <samp>\tralics@use@subfigure</samp> (Wagner)
+    <br/> Corrected silly bug in stack::isfloat
+    <br/> Changed status of <samp>\linewidth</samp> and <samp>\columnwidth</samp>
+    <br/> <b>[2008-01-31]</b> Allow underscore in Team names for the Raweb (Durollet).
+    <br/> Changed the way how the tralic_rc file is found if confdir is given.
+  </li>
+  <li id="v2-11-4"> <b>[2008-02-05, version 2.11.4]</b>
+    <br/>  Command name added to XML result element
+    <tt class='txt'>&lt;error&gt;</tt> in case of error.
+    <br/>  <b id="v2-11-5">[2008-02-07]</b> Bug fix; Brace delimiters were
+    wrong [Umesh Vishwakarma]
+    <br/> Changed the test in txpath.h, using APPLE instead of ppc.
+    <br/> Added enumeration for special cases in parse_args
+    <br/> Made <tt>foo.xml.tex</tt> an invalid input file name
+    <br/> Made <tt>foo.xml</tt> a synonym to <tt>foo.tex</tt> as input name
+    <br/> Added options <tt class='verb'>input_file</tt>,  <tt class='verb'>output_file</tt>,  <tt class='verb'>log_file</tt>.
+    <br/> Changed basic IO functions
+    <br/> Bug fix in str_toks11
+    <br/> Space and newline are identical in <samp>\ifx</samp>
+    <br/> Implemented the xkeyval package. 
+    Options of <samp>\usepackage</samp> may contain commands.
+  </li>
+  <li> <b>[2008-02-18, version 2.11.5]</b>
+    Reimplemented packages and classes.
+    <br/> Re-implemented <samp>filecontents</samp> environment
+    <br/> Capitalised some class names; Xml replaced by Xmlp
+    <br/> Changed return value of <tt>get_macro</tt> to a reference
+    <br/> Removed the name of Buffer
+    <br/> Renamed <tt>my_stack</tt> to <tt>the_stack</tt>
+    <br/> In txtitlepage, less global variables
+  </li>
+  <li id="v2-11-6"> <b>[2008-02-22, version 2.11.6]</b>
+    <br/> Replaced <tt>sym_codes</tt> by <tt>symcodes</tt>
+    <br/> Implemented <samp>\PackageError</samp> and the like
+    <br/> Implemented <samp>\ChangeElementName</samp>
+    <br/> Setting of <tt>makefo</tt> in <tt>ShellActions::assign</tt> considered
+    obsolete and moved at end of function. 
+    <br/> Fixed the case where options not declared with <samp>\DeclareOptionX</samp> have
+    an equal sign.
+    <br/>Fixed the case where <samp>\documentclass</samp> options have braces
+    when scanning docytpe
+    <br/> Commands like <samp>\@car</samp> are non-long
+    <br/> Added <samp>\CheckCommand</samp>
+    <br/> Renamed <tt>parser::define</tt> as <tt>parser::mac_define</tt>
+    <br/> Package <tt>checkend</tt> adds an Info item to the XML file.
+    <br/> Bug fix, command <samp>\@cons</samp> changes its arg globally.
+    <br/> Changed some macros that read argument lists like <tt>next_opt_arg</tt>
+    <br/> Outer check added for <samp>\@addtoreset</samp> and other commands
+    that call <samp>\csname</samp> (ifundefined).
+    <br/> Removed paragraph hacks for keywords.
+    <br/> Implemented <samp>\ifvoid</samp>
+    <br/> Fixed a silly bug: arithmetic overflow limits were off by a factor 8;
+    (wrong constants)
+    <br/> You can say <samp>\hbox{$$x$$}</samp>
+    <br/> Made <samp>\scantokens</samp> work in interactive mode
+    <br/> Moved <samp>\newblock</samp> into <tt>std.clt</tt>
+    <br/> Moved some commands to <tt>amsmath</tt> package
+    <br/> Consider carriage-return as unprintable, hence prints as ^^M.
+    <br/> Changed <tt>is_big</tt> so that char U+FFFF is valid on input.
+    (neither U+FFFE nor U+FFFF are in the XML output). 
+    <br/> Replaced LaTeX Warning by Tralics Warning.
+    <br/> Added special marker for Warning, so that <samp>\@gobble</samp> works.
+    <br/> Made <samp>\stop</samp> work in interactive mode
+    <br/> Fixed a bug in <tt>add_buffer_to_list</tt>, TL was badly pushed/popped
+    <br/> Variable <tt>name_for_error</tt> locally reset in expand and translate
+    <br/> Error element contains<tt> name_for_error</tt>, without final space
+    <br/> Endline char is <tt>\r</tt> in verbatim
+    <br/> Error recovery mechanism changed
+    <br/> Added a file txparser3
+    <br/> Mode of <samp>thebibliography</samp> Changed.
+    <br/> Implemented <samp>@nomathml=-2</samp> mode.
+  </li>
+  <li id="v2-11-7"> <b>[2008-04-04, version 2.11.7]</b>
+    <br/> Change chapter ids from uidXXX to cidXXX
+    <br/> Removed <tt>stop_on_error</tt> flag for parse_error.
+    <br/> No message of the form image foo not found if foo.png exists.
+    <br/> Fixed a bug in <samp>\@reevaluate\foo\bar\gee</samp>
+    <br/> Created a virtual file named <tt class='verb'>.tex</tt>
+    <br/> You can say <samp>\input{}</samp>.
+    <br/> Result of <samp>\read</samp> is always brace balanced
+    <br/> Fixed a bug where <samp>\thickmuskip==\muskip0</samp>
+    <br/> Changed overflow signalling mechanism.
+    <br/> Removed the global variable <tt>radix</tt>.
+    <br/> Moved some global variables into <tt>main_ns</tt> namespace.
+    <br/> Removed variable <tt>Parser::silent</tt>
+    <br/> Replaced all occurences of <tt>skip_group</tt> by <tt>mac_arg</tt>
+  </li>
+  <li id="v2-11-8"> <b>[2008-04-15, version 2.11.8]</b>  
+    <br/> Removed function no_ovf_add.
+    <br/> Other arithmetic checks added.
+    <br/> Removed mu to glue and glue to mu functions. 
+    <br/> Inlined  cv_mu_to_glue and cv_glue_to_mu.
+    <br/> Changed type of integer in SthInternal to ScaledInteger
+    <br/> Made arith operations members of ScaledInteger
+    <br/> Fixed a bug in scale, when division is exact.
+    <br/> Added restrictions to environment <samp>catperso</samp>
+    <br/> DTD can be given on the command line
+    <br/> No directory search for ult file
+    <br/> Optional plus in <samp>\IfFileExists</samp> and  
+    <samp>\InputIfFileExists</samp>
+    <br/> Option param takes one or two arguments
+    <br/> No creation of foo_.bbl if useless
+    <br/> Ignore check option in RA2008
+    <br/> Removed the fatal error if more than one of check/ps/xml are given
+    <br/> Shell variables TRALICSDIR and RAWEBDIR no more looked at </li>
+</ol>
+
+
+<h2  id="v2-12">Version 2.12</h2>
+<ol>
+  <li id="v2-12-0">  <b>[2008-04-21, version 2.12]</b>  
+    <br/> [2008/04/26] Fixed the bug <samp>\mathcode`x="<!-- "-->8000$\mbox{x}$</samp>
+    <br/> In nomathml, <samp>\relax</samp>  not printed any more.
+    <br/> Fixed a bug in <tt>natbib.plt</tt> (Wagner) when <samp>\cite</samp> is
+    redefined.
+    <br/> Added end-of-paragraph before <samp>\end{thebibliography}</samp>
+  </li>
+  <li>  <b>[2008-05-18, version 2.12.1]</b>  
+    <br/> Fixme. Font changes in tables are incorrect...
+    <br/> Implemented <samp>\natcite</samp>
+    <br/> Changed <samp>\bibitem</samp>, calls  <samp>\ignorespaces</samp>, 
+    produces a bibitem  element 
+    <br/> Bug fix: declaration <tt>xml_pack_font_att = "true"</tt> is honored.
+    <br/> Changed <samp>\mathversion{bold}$\mathnormal x$</samp> to produce bold.
+    <br/> Implemented tipa package. 
+    <br/> Bug fix <samp>$\hbox{{\ensuremath{x}y}}$</samp> is OK 
+    <br/> Implemented bold math Greak letter (Wagner)
+  </li>
+  <li>  <b>[2008-05-29, version 2.12.2]</b> 
+    <br/> Newline is OK in <samp>\zap@space</samp>
+    <br/> Changed <samp>\:</samp> to medmuskip
+    <br/> Use <tt class='txt'>&lt;unexpected&gt;</tt> for junk in table (Wagner)
+    <br/> Allow any kind of space in text in math (Wagner)
+  </li>
+  <li>  <b>[2008-06-06, version 2.12.3]</b> 
+    <br/> Implemented <samp>\formulaattribute</samp> in no-mathml mode (Vishwakarma)
+    <br/> Added a <tt>textype</tt> attribute for all <tt class='txt'>&lt;texmath&gt;</tt> objects
+    <br/> Special commands like <samp>\tralics@prompt</samp> added
+    <br/> Added raw_bib as command line option
+    <br/> Translation of <samp>\begin{table} \begin{tabular}</samp> is a tabular.
+    (Wagner)
+    <br/> Fixed default type for masterthesis.
+    <br/> The <samp>\calc</samp> command is mode independent (Vishwakarma)
+  </li>
+  <li id="v2-12-4">  <b>[2008-06-20, version 2.12.4]</b> 
+    <br/> Moved declaration of uint from txvars to tralics.h (Leopard)
+    <br/> Removed a bibtex error if no author/editor 
+    <br/> Expansion of <samp>\u z</samp> is 
+    <samp>\@unicode@composite {z^^^^0306}</samp> (T. Bouche)
+    <br/> Commands like <samp>\bar</samp> do not look anymore for <samp>\relax</samp> (T. Bouche)
+  </li>
+  <li  id="v2-12-6">  <b>[2008-07-04, version 2.12.6]</b> 
+    <br/> [2008-07-08] Default value of <samp>\pers</samp> 
+    is <samp>\persB</samp>
+    <br/> Removed restrictions on participants, catperso, etc.
+    <br/> Distribution comes in two files: tralics-src and tralics-extra
+    <br/> Removed use of file <tt>../xml/tralics.sty</tt> in test files.
+    <br/> Removed function only_for_module and associated statistics.
+    <br/> Made Tralics less verbose for image info.
+    <br/> Renamed default_year to ra_year, associated to <samp>\ra@year</samp>
+    <br/> Added two source files txra and txconfig.
+    <br/> Complete redesign of the RA stuff (Tex code in ra.plt ra2008.clt)
+    <br/> Removed the value field in the ParamDataSlot
+    <br/> Removed side-effects in check_ns::check_section
+    <br/> Biblio inserts <samp>\csname @href\endcsname</samp> 
+    in case <samp>\href</samp> is redefined
+    <br/> No <samp>\href</samp> added if the URL field has <samp>\rrrt</samp>
+    <br/> Removed file txcheck.
+    <br/> Removed all special hacks for the RA, todo_xml etc.
+    <br/> Changed <samp>\XMLaddatt</samp> : argument fully translated.
+      Special chars maybe handled differently
+  </li>
+</ol>
+
+<h2 id="v2-13">Version 2.13</h2>
+<ol>
+  <li id="v2-13-0">  <b>[2008-07-20, version 2.13.0]</b> 
+    <br/> Fixed <samp>\end{...}</samp> if in env that finishes the math
+    <br/> Removed SansTitre etc
+    <br/> Made <samp>\ra@jobname</samp> work in any case
+    <br/> Removed printing of <i>Option -year= ignored</i>
+    <br/> Added a fifth small size
+    <br/> Added <samp>\@xsetfontsize</samp> and <samp>\@xgetfontsize</samp>
+    <br/> <b>[2008-09-16]</b>  Implemented amsart class
+    <br/> Added an id-text attribute to most anchors 
+    <br/> Implemented <samp>\refstepcounter</samp>
+    <br/> Implemented <samp>\notag</samp> and <samp>\incr@eqnum</samp>
+    <br/> Changed <samp>\thechapter</samp> etc in standard classes
+    <br/> Replaced <samp>\stepcounter</samp> by <samp>\refstepcounter</samp> in ra.plt
+    <br/> Defined the command <samp>\AmS</samp>, as well as the ten 
+      analogous of <samp>\Hat</samp> in the amsmath package
+    <br/> Created a soul package, moved 4 commands into it
+    <br/> Added commands of type <samp>\labelenumi</samp>
+    <br/> Added commands of type <samp>\p@enumii</samp>
+    <br/> Implemented <samp>\newtheorem*</samp>
+    <br/> Hack the case where a theorem starts with a display formula.
+    <br/> Implemented <samp>\hdotsfor</samp> as a line of dots
+    <br/> Change which equations are numbered
+    <br/> Allow <samp>\char`\\</samp> in text in math
+    <br/> Changed <samp>\stepcounter</samp> and <samp>\@killcounter</samp>
+    <br/> Fixed a bug in <samp>\XMLlastid</samp>
+    <br/> Added <samp>\everybibitem</samp>
+    <br/> Added <samp>\XMLgetatt</samp>
+    <br/> Re-implemented attlisttable.
+    <br/> Removed the AttListTable structure, uses vector instead
+  </li>
+  <li id="v2-13-1">
+    <b>[2008-10-03, Version 2.13.1]</b>
+    <br/> Removed all hacks concerning year field for the raweb
+    <br/><b>[2008-10-16]</b> Added special case of <samp>\ChangeElementName{theorem}{xx}</samp>
+    when second argument is empty or starts with space.
+    <br/> Fixed a bug: the anchor is always the theorem element, 
+    if name is empty, then attribute list is copied to
+    the <tt class='txt'>&lt;p&gt;</tt>  that follows.
+    <br/> Changed figure filename handling: <samp>./</samp> no more removed
+    <br/> Implemented transation of optional argument of divisions and 
+    <samp>\caption</samp>. Value  put in a <tt class='txt'>&lt;alt_head&gt;</tt>
+    may be changed in config via <tt>alt_section</tt> or <tt>alt_caption</tt>
+    <br/> Fixed translation of <samp>\bindnasrepma</samp> from U+260B to U+214B
+    <br/> Fixed some math envs (e.g. <samp>align</samp>), by providing a non-empty id-text value. 
+    <br/> Added option <tt class='verb'>-no_float_hack</tt>
+    <br/> Obsoleted options <tt class='verb'>nobibyearerror</tt> and <tt class='verb'>nobibyearmodify</tt>.
+    <br/> Removed parametrisation of raweb topics.
+    <br/> Use other counters for <samp>itemize</samp> than for <samp>enumerate</samp>
+    <br/> Moved  the <samp>\glo</samp> command and <samp>glossaire</samp> env in in ra.plt
+    <br/> Fixed translation of <samp>\quad</samp> and others in nonmathml mode in <samp>\mbox</samp>
+    <br/> Added some Win32 conditionals in readline.C
+    <br/> Feature: optional argument in <samp>enumerate</samp> does not change
+    the type to description
+    <br/> Added a label attribute to items in <samp>enumerate</samp> env 
+    <br/> Added <samp>enumi@hook</samp> (Brian West)
+    <br/> Moved <samp>\labelitemXXX</samp> from std.clt to the kernel
+    <br/> Added a default label, just in case
+    <br/> Removed evaluation of font commands in nomathml mode (Mukesh Kumar)
+    <br/> Added command name of <samp>\hbox</samp> in the tree for nomathml
+    mode  (Mukesh Kumar)
+    <br/> Removed interpretation of <samp>\hbox</samp> in nomathml mode
+    <br/> Removed the bibtex warning: <i>You should use {\'e} rather than \'{e}.</i>
+  </li>
+  <li id="v2-13-3">
+    <b>[2008-10-27, Version 2.13.3]</b>
+    <br/> Fix a bug in wrapfigure
+    <br/> Implemented package epigraph
+    <br/> Added missing line number in error message for missing close brace
+    <br/> Allow expansion of arguments of <samp>\begin</samp>, <samp>\end</samp>
+    <br/> Improved error handling of <samp>\def\xx#1{}\begin{\xx}</samp>.
+    <br/> Changed <samp>\hspace{2.cm}</samp> in math mode, result always a
+    dimension in pt, works even after <samp>\mathcode`\.="8000</samp> <!-- "-->
+    <br/> Implemented package esdiff.
+    <br/> Implemented full graphics package
+    <br/> Implemented optional arg of <samp>\rotatebox</samp>
+    <br/> Implemented colors
+    <br/> Implemented commands like <samp>\textsevenoldstyle</samp>.
+    <br/> Fixed a bug in function read_from_file (core dump on gcc-3.3.3)  
+    <br/> Added a <samp>verse</samp> environment
+    <br/> Fixed <samp>\@latex@error</samp> and others.
+    <br/> Moved <samp>moreinfo</samp> in a style file
+  </li>
+  <li id="v2-13-4">
+    <b>[2008-11-13, Version 2.13.4]</b>
+    <br/> Allow <samp>\fbox{\[ x\]}</samp>
+    <br/> Allow <samp>\fbox{\begin{tabular}{c} x &amp; y  \end{tabular}}</samp>
+    <br/> At most four digits are read for the year
+  </li>
+  <li id="v2-13-5">
+    <b>[2008-11-17, Version 2.13.5]</b>
+    <br/>Added <samp>\XMLref</samp>
+    <br/> Fixed underscores and hat: these characters are allowed if 
+    InLoadHandler. OK in <samp>\XMLaddatt</samp>.
+    <br/>Removed runaway argument error in use of <samp>\@reevaluate</samp> 
+    <br/> Fixed <samp>\bmod</samp> (Bouche)
+  </li>
+  <li id="v2-13-6">
+    <b>[2009-10-05, Version 2.13.6]</b>
+    <br/>Added <samp>\XMLref</samp>
+    <br/> Added kvoptions, float package
+    <br/> Changed <samp>\ClassError</samp> to put something in the XML
+    <br/> Bug correction detected by compiler. (Hashtab ctor; cmd ifdefinable; cmd ltfont)
+    <br/> Added parentheses as suggested by compiler.
+    <br/><b>[2009-10-14]</b>
+    <br/> Corrected printing of command names like <samp>&amp;</samp> in error elements 
+    <br/> Removed theme if year &gt; 2008 for the RA
+    <br/> Thus, file testerr tested with year=2008.
+    <br/> Added test files for RA2009
+    <br/> Added list of fields/entries not to use in the Biblio
+    <br/> Changed warning for Lille
+    <br/> [2010-03-31] Added a hack for primes in  math mode
+    <br/> Some math-mode names can be changed
+    <br/> Corrected a bug in printing of very large characters
+  </li>
+  <li id="v2-13-7">
+    <b> [2010-10-25, Version 2.13.7] </b>
+     <br/> Input file encoding algorithm improved.
+     <br/>  Corrrected <tt class='txt'>new ColSpec::ColSpec (...)</tt> (thanks to
+    Daniel Simon)
+  </li>
+</ol>
+<h2 id="v2-14">Version 2.14</h2>
+<ol>
+  <li id="v2-14-1">  <b> [2011-01-24, Version 2.14.1] </b>
+     <br/> [bibtex] Added the serial number to the bibtex sort key 
+     <br/> [txmath]  Corrected tracing of <samp>$\hspace{2mm}$</samp>
+     <br/> Improved printing of math tokens  in case of fonts
+     <br/> Corrected translation of <samp>\left</samp> in nomath-2
+    mode
+    <br/> Added <samp>\negmedspace \negthickspace </samp>
+    <br/> Corrected error message for <samp>\sin\int</samp> outside
+    math
+    <br/> Corrected <samp>\left\updownarrow</samp> in nomathml mode
+    <br/> [amsmath.plt] Changed definition of <samp>xxalignat</samp>
+     and Co. Corrected the no-mathml translation.
+    <br/> No label generated for  starred version
+     of  <samp>align</samp> env.
+    <br/> Implemented dual mathmode in case <samp>\@nomathl=-3</samp> 
+    <br/>  Argument of <samp>\bibliography</samp> may contain a
+     trailing <tt class='txt'>bib</tt> extension (Eric Bischoff)
+    <br/> [2011/04/11] Added <samp>\tableattribute</samp> env.
+    <br/> No error in <tt>missing_flush</tt> if buffer contains only
+     of spaces.
+    <br/> No error in cases like <samp>$\mbox{\hspace {2mm}}$</samp>.
+    <br/> Implemented  <samp>\bordermatrix</samp>
+    <br/> Improved some error messages 
+   <b> [2011-05-02, Version 2.14.3] released </b>
+   <br/> Fixed the font/size/color in <samp>\footnote</samp>
+   <br/> Allows <samp>\ChangeElementName{use_font_elt}{true}</samp>
+   <br/> Implemented <samp>\appendix</samp> in classes.
+   <br/> Commands like <samp>\newpage</samp> implicitly call <samp>\par</samp>
+   <br/> Added <samp>\nouppercase</samp>
+   and <samp>\fancypagestyle</samp> commands in fancyhdr.plt
+   <br/> Implemented <samp>\listoftables</samp> and
+    <samp>\listoffigures</samp> 
+   <br/> Command <samp>\tableofcontents</samp> finishes a paragraph
+   and inserts the value of <samp>tocdepth</samp> counter.
+   <br/> Corrected error message in case of bad hbox. Produces a
+   <tt class='txt'>&lt;merror&gt;</tt> element
+    </li>
+   
+</ol>
+
+<hr/>
+<p>
+<a href="http://validator.w3.org/check?uri=referer"><img
+   src="http://www.w3.org/Icons/valid-xhtml10"
+   alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+<small><a href="index.html">back to home page</a></small>
+<small>&copy; INRIA 2005-2011</small>
+<small>Last modified $Date: 2011/06/28 07:45:16 $</small>
+</p>
+
+</body>
+
+</html>

@@ -1,0 +1,523 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<!DOCTYPE ramain SYSTEM 'raweb.dtd'>
+<!-- Translated from latex by tralics 2.14.1, date: 2011/02/01-->
+<ramain creator='Tralics version 2.14.1'>
+<p>DOCSTART</p>
+<texmath textype='display' type='display'>x6</texmath>
+<div0 id-text='1' id='cid1'><head>simple math</head>
+<p><texmath textype='inline' type='inline'>\sharp </texmath> &#x266F;</p>
+<p><texmath textype='inline' type='inline'>
+\i \j \$ ~\, \_ \&amp; \lbrace  \rbrace  \% \ \! \quad \qquad \dots \ldots \# \sharp \natural \flat </texmath>
+=
+<texmath textype='inline' type='inline'>\hspace{56.9055pt} \vspace{569.05511pt} \hspace{3.0pt}\vspace{4.0pt}\hspace*{5.0pt}\vspace*{6.0pt}</texmath>
+<texmath textype='inline' type='inline'>\hspace{-24.0pt} \vspace{-24.0pt} \hspace{-3.0pt}\vspace{4.0pt}\hspace*{-5.0pt}\vspace*{-6.0pt}</texmath>
+<texmath textype='inline' type='inline'>abcdefghijklmnopqrstuvwxyz</texmath>
+<texmath textype='inline' type='inline'>ABCDEFGHIJKLMNOPQRSTUVWXYZ</texmath>
+<texmath textype='inline' type='inline'>&lt;&gt;,?;./:+=-_"^{\prime }()§!` ^{\prime }"</texmath>
+<texmath textype='inline' type='inline'>&#x1234;aà</texmath></p>
+<p><texmath textype='inline' type='inline'>\alpha \beta \gamma \delta \epsilon \varepsilon \zeta \eta \theta \iota \kappa \lambda \mu \nu \xi \pi \rho \sigma \tau \upsilon \phi \chi \psi \omega \varpi \varrho \varsigma \varphi \varkappa \vartheta </texmath>
+<texmath textype='inline' type='inline'>\Gamma \Delta \Theta \Lambda \Xi \Sigma \Upsilon \Phi \Pi \Psi \Omega </texmath></p>
+<p><texmath textype='inline' type='inline'>\hbar \ell \wp \Re \Im \partial \infty \emptyset \nabla \surd \top \bottom \bot \angle \triangle </texmath></p>
+<p><texmath textype='inline' type='inline'> \arccos \arcsin \arctan \arg \cos \cosh \cot \coth \csc \deg \dim </texmath>
+<texmath textype='inline' type='inline'> \exp \hom \ker \lg \ln \log \Pr \sec \sin \sinh \tan \tanh \det \gcd </texmath>
+<texmath textype='inline' type='inline'>\inf \injlim \lim \liminf \limsup \max \min \projlim \sup </texmath></p>
+<p><texmath textype='inline' type='inline'>\forall \exists </texmath></p>
+<p><texmath textype='inline' type='inline'>\coprod \bigvee \bigwedge \biguplus \bigcap \bigcup \int \sum \prod \bigotimes \bigoplus \bigodot \oint \bigsqcup \smallint </texmath></p>
+<p><texmath textype='inline' type='inline'>\triangleleft \triangleright \bigtriangleup \bigtriangledown \wedge \wedge \vee \vee \cap \cup \multimap \dagger \ddagger \sqcap \sqcup \amalg \diamond \Diamond \bullet \wr \div \odot \oslash \otimes \ominus \oplus \uplus \mp \pm \circ \bigcirc \setminus \cdot \ast \times \star </texmath></p>
+<p><texmath textype='inline' type='inline'>\propto \sqsubseteq \sqsupseteq \subseteq \sqsubset \parallel \mid \dashv \vdash \Vdash \models \nearrow \searrow \swarrow \nwarrow \Leftrightarrow \Leftarrow \Rightarrow \ne \ne \le \le \ge \ge \succ \approx \succeq \preceq \prec \doteq \subset \supset \supseteq \subseteq \bindnasrepma \ni \ni \gg \ll \gtrless \geqslant \leqslant \lnot \notin \leftrightarrow \leftarrow \leftarrow \rightarrow \rightarrow \mapsto \sim \simeq \perp \equiv \asymp \smile \frown \leftharpoonup \leftharpoondown \rightharpoonup \rightharpoondown \hookrightarrow \hookleftarrow \bowtie \bowtie \Longrightarrow \longrightarrow \longleftarrow \Longleftarrow \longmapsto \longleftrightarrow \Longleftrightarrow \iff </texmath></p>
+<p><texmath textype='inline' type='inline'> \cdots \hdots \vdots \ddots \imath \jmath \Vert \Vert  \vert \uparrow \downarrow \Uparrow \Downarrow \Updownarrow \updownarrow \mho \clubsuit \diamondsuit \heartsuit \spadesuit \aleph \backslash \Box \langle \rangle \rmoustache \lmoustache \rgroup \lgroup \rbrace \lbrace \rceil \lceil \rfloor \lfloor \square \cong \lnot \lnot \in \prime </texmath></p>
+<p><texmath textype='inline' type='inline'> &lt;&gt;,.:;*?!()[]|+-/=</texmath></p>
+<p><texmath textype='inline' type='inline'> \hspace{5.0pt}\: \; \: \! \quad \qquad ~</texmath></p>
+<p><texmath textype='inline' type='inline'>\smallint \int \vee \ni \ldots \top \bot \nabla \flat \Re \infty \surd \natural \Im \hbar \ell \sharp \angle \emptyset \triangle \lnot \wp \partial </texmath></p>
+<p><texmath textype='math' type='inline'>\alpha =\beta </texmath> and
+<texmath textype='inline' type='inline'>\gamma =\delta </texmath> and <texmath textype='inline' type='inline'>\phi =\psi </texmath>;
+and <texmath textype='inline' type='inline'>0\ne \infty </texmath></p>
+</div0>
+<div0 id-text='2' id='cid2'><head>Mathaccents</head>
+<p><texmath textype='inline' type='inline'>HAT: \hat{a} \acute{b} \bar{c} \dot{d} \breve{e} \check{f} \grave{g} \vec{h}
+\ddot{k} \tilde{l}a\rightarrow b\longrightarrow c</texmath></p>
+<p><texmath textype='inline' type='inline'>ACUTE: \acute{x} \bar{x} \breve{x} \check{x}
+\ddddot{x} \dddot{x} \ddot{x} \dot{x}
+\grave{x} \hat{x} \mathring{x} \tilde{x}
+\vec{x} \widehat{xyz} \widetilde{xyz}</texmath></p>
+<p><texmath textype='inline' type='inline'>WIDETILDE: \widetilde{abc} \widehat{abc} \overleftarrow{abc} \overrightarrow{abc}
+\overline{abc} \underline{abc} \overbrace{abc} \underbrace{abc}
+\underleftarrow{abc} \underrightarrow{abc}
+</texmath></p>
+</div0>
+<div0 id-text='3' id='cid3'><head>Commands</head>
+<p><texmath textype='inline' type='inline'>\min _xf(x) &gt;\operatorname{dmin}_xf(x)</texmath>.
+
+<texmath textype='inline' type='inline'>\min _xf(x) &gt;\operatornamewithlimits{dmin}_xf(x)</texmath>.</p>
+<p><texmath textype='inline' type='inline'>\overline{foo}\underline{bar}</texmath>
+<texmath textype='inline' type='inline'>\stackrel{j}{\longrightarrow } </texmath>
+<texmath textype='inline' type='inline'>\overset{*}{X} \underset{*}{X}</texmath>
+<texmath textype='inline' type='inline'>\overbrace{xyz} </texmath>
+<texmath textype='inline' type='inline'>\underbrace{xyz}</texmath>
+<texmath textype='inline' type='inline'>\frac{abc}{xyz} \dfrac{abc}{xyz} \tfrac{abc}{xyz}</texmath>
+<texmath textype='inline' type='inline'>\sqrt{abc} \@root n \of {abc} \@root n  \of {abc}</texmath></p>
+<p><texmath textype='inline' type='inline'>\bigl [\frac{1}{a^2}\bigr [</texmath>
+<texmath textype='inline' type='inline'>\left[\frac{1}{b^2}\right[</texmath>
+<texmath textype='inline' type='inline'>[\frac{1}{x^2}[</texmath></p>
+<texmath textype='display' type='display'>\genfrac{}{}{}{}{1}{2}
+\genfrac[]{2.0pt}2{aaa}{bbb}
+\genfrac(){0.0pt}0{n}{m}
+</texmath>
+<p><texmath textype='inline' type='inline'>a\nonscript \,b_{c\nonscript \,d} a\nonscript \,b_{\textstyle c\nonscript \,d} </texmath></p>
+<texmath textype='display' type='display'>\mathchoice{a}{b}{c}{d}= \frac{\mathchoice{a}{b}{c}{d}}{\mathchoice{a}{b}{c}{d}} =
+1_{\mathchoice{a}{b}{c}{d}\frac{\mathchoice{a}{b}{c}{d}}{\mathchoice{a}{b}{c}{d}}} = 2^ {\mathchoice{a}{b}{c}{d}\frac{\mathchoice{a}{b}{c}{d}}{\mathchoice{a}{b}{c}{d}}}</texmath>
+<p rend='center'><texmath textype='inline' type='inline'>\mathchoice{a}{b}{c}{d}= \frac{\mathchoice{a}{b}{c}{d}}{\mathchoice{a}{b}{c}{d}} =
+1_{\mathchoice{a}{b}{c}{d}\frac{\mathchoice{a}{b}{c}{d}}{\mathchoice{a}{b}{c}{d}}} = 2^ {\mathchoice{a}{b}{c}{d}\frac{\mathchoice{a}{b}{c}{d}}{\mathchoice{a}{b}{c}{d}}}</texmath></p>
+<p><texmath textype='inline' type='inline'>{\frac{1}{2}}{x\displaystyle \frac{1}{2}}
+{x\textstyle \frac{1}{2}}{x\scriptstyle \frac{1}{2}}{x\scriptscriptstyle \frac{1}{2}} \qquad {x\displaystyle a}+{x\textstyle a}+{x\scriptstyle a}+{x\scriptscriptstyle a}\qquad \frac{x\displaystyle a}{x\textstyle b}+\frac{x\scriptstyle a}{x\scriptscriptstyle b}</texmath></p>
+</div0>
+<div0 id-text='4' id='cid4'><head>Environments</head>
+</div0>
+<div0 id-text='5' id='cid5'><head>Other</head>
+<texmath id-text='1' id='uid1' textype='equation' type='display'>
+\begin{aligned}
+x^2+y^2&amp;=1 &amp; 1 &amp;=X^2+Y^2\\
+x &amp;=0.01&amp; 0.001&amp;=X
+\end{aligned} 
+</texmath>
+<texmath id-text='5' id='uid2' textype='multline' type='display'>
+\sin =\cos \\
+\multicolumn{a}{b}{c}\\
+\multicolumn{1}{r}{\cos }\\
+\multicolumn{1}{l}{\sin }\\
+1+2
+</texmath>
+<foo>ccaaAbbBaa</foo><texmath textype='display' type='display'>\beta  A\hbox{aaB $\alpha C$} D</texmath>
+<p noindent='true'><foo>AB</foo></p>
+<texmath textype='display' type='display'> A\hbox{B $C$} D</texmath>
+<p><texmath textype='inline' type='inline'>a+b</texmath> <texmath textype='inline' type='inline'>a\mathbin +b</texmath></p>
+<texmath id-text='3' id='uid3' textype='equation' type='display'> 0=1 </texmath>
+<texmath textype='equation*' type='display'> 0=2 </texmath>
+<texmath textype='displaymath' type='display'> 0=3 </texmath>
+<texmath textype='display' type='display'> 0=4 </texmath>
+<texmath textype='display' type='display'> 0 = 5 </texmath>
+<texmath id-text='4' id='uid4' textype='equation' type='display'>
+\begin{split}
+(a+b)^4 &amp;= (a+b)^ 2 (a+b)^2 \\
+&amp;= (a^2+2ab+b^2)(a^2+2ab+b^2) \\
+&amp;= a^4+4a^3b+6a^2b^2+4ab^3+b^4 \\
+\end{split}
+</texmath>
+<texmath id-text='5' id='uid5' textype='equation' type='display'>
+\begin{aligned}
+(a+b)^4 &amp;= (a+b)^ 2 (a+b)^2 \\
+&amp;= (a^2+2ab+b^2)(a^2+2ab+b^2) \\
+&amp;= a^4+4a^3b+6a^2b^2+4ab^3+b^4 \\
+\end{aligned}
+</texmath>
+<texmath id-text='5' id='uid6' textype='align' type='display'>
+x^2+y^2&amp;=1\\ x&amp;=\sqrt{1-y^2}
+</texmath>
+<texmath textype='eqnarray*' type='display'>
+x &amp; \ll &amp; y_{1} + \cdots + y_{n} \\
+&amp; \le &amp;z
+</texmath>
+<texmath id-text='5' id='uid7' textype='eqnarray' type='display'>
+x &amp; = &amp;17y \\
+y &amp; &gt; &amp; a + b + c+d+e+f+g+h+i+j+ \nonumber \\
+&amp; &amp; k+l+m+n+o+p
+</texmath>
+<texmath textype='display' type='display'>EQ1</texmath>
+<p noindent='true'>etc</p>
+<texmath textype='display' type='display'>EQ2</texmath>
+<p>etc</p>
+<texmath textype='display' type='display'>EQ3</texmath>
+<texmath textype='align*' type='display'>
+u&amp; \equiv v+1 \mod {n^2} \\
+u&amp; \equiv v+1 \bmod {n^2} \\
+u&amp; = v+1 \pmod {n^2} \\
+u&amp; = v+1 \hspace{10.0pt}(n^2) \\
+</texmath>
+<texmath textype='display' type='display'>\frac{1}{2} \dfrac{1}{2} \tfrac{1}{2} \qquad {}^{\frac{1}{2} \dfrac{1}{2} \tfrac{1}{2}}</texmath>
+<texmath textype='display' type='display'>\frac{\mathchoice{a}{b}{c}{d}\frac{\mathchoice{a}{b}{c}{d}+m}{2}}{\mathchoice{a}{b}{c}{d}}\quad \tfrac{\mathchoice{a}{b}{c}{d}\frac{\mathchoice{a}{b}{c}{d}+m}{2}}{\mathchoice{a}{b}{c}{d}}\quad \dfrac{\mathchoice{a}{b}{c}{d}\frac{\mathchoice{a}{b}{c}{d}+m}{2}}{\mathchoice{a}{b}{c}{d}}</texmath>
+<p><texmath textype='inline' type='inline'>\bar{\dot{\rm o}}</texmath>
+a - b &#x2013; c &#x2014; d</p>
+<texmath textype='display' type='display'>\binom{\frac{\mathchoice{a}{b}{c}{d}+m}{2}}{\mathchoice{a}{b}{c}{d}}\quad \tbinom{\frac{\mathchoice{a}{b}{c}{d}+m}{2}}{\mathchoice{a}{b}{c}{d}}\quad \dbinom{\frac{\mathchoice{a}{b}{c}{d}+m}{2}}{\mathchoice{a}{b}{c}{d}}\qquad {}^{\binom{\frac{\mathchoice{a}{b}{c}{d}+m}{2}}{\mathchoice{a}{b}{c}{d}}\quad \tbinom{\frac{\mathchoice{a}{b}{c}{d}+m}{2}}{\mathchoice{a}{b}{c}{d}}\quad \dbinom{\frac{\mathchoice{a}{b}{c}{d}+m}{2}}{\mathchoice{a}{b}{c}{d}}}</texmath>
+<texmath textype='display' type='display'>a\over {b\over c}
+</texmath>
+<p>y´<texmath textype='inline' type='inline'>x^{\prime } x^{\prime \prime } x^{\prime \prime \prime } x^{\prime \prime \prime \prime } u_2^{\prime } v^{\prime 3}_4</texmath></p>
+<p><texmath textype='inline' type='inline'>\min _xf(x) &gt;\operatorname{dmin}_xf(x)</texmath>.</p>
+<p><texmath textype='inline' type='inline'>\min _xf(x) &gt;\mathmo{dmin}\mathattribute{form}{prefix}\mathattribute{movablelimits}{true}_xf(x)</texmath>.</p>
+<texmath id-text='8' id='uid8' textype='equation' type='display'>\begin{split}
+\mathtt {Aa}\mathcal {A}\mathbf {Aa}\mathrm {Aa}
+\mathit {Aa}\mathbb {A}\mathsf {Aa}\mathnormal {Aa} &amp;\mathtt {Bb}\mathcal {B}\mathbf {Bb}\mathrm {Bb}
+\mathit {Bb}\mathbb {B}\mathsf {Bb}\mathnormal {Bb}\\
+\mathtt {Cc}\mathcal {C}\mathbf {Cc}\mathrm {Cc}
+\mathit {Cc}\mathbb {C}\mathsf {Cc}\mathnormal {Cc} &amp;\mathtt {Dd}\mathcal {D}\mathbf {Dd}\mathrm {Dd}
+\mathit {Dd}\mathbb {D}\mathsf {Dd}\mathnormal {Dd}\\
+\mathtt {Ee}\mathcal {E}\mathbf {Ee}\mathrm {Ee}
+\mathit {Ee}\mathbb {E}\mathsf {Ee}\mathnormal {Ee} &amp;\mathtt {Ff}\mathcal {F}\mathbf {Ff}\mathrm {Ff}
+\mathit {Ff}\mathbb {F}\mathsf {Ff}\mathnormal {Ff}\\
+\mathtt {Gg}\mathcal {G}\mathbf {Gg}\mathrm {Gg}
+\mathit {Gg}\mathbb {G}\mathsf {Gg}\mathnormal {Gg} &amp;\mathtt {Hh}\mathcal {H}\mathbf {Hh}\mathrm {Hh}
+\mathit {Hh}\mathbb {H}\mathsf {Hh}\mathnormal {Hh}\\
+\mathtt {Ii}\mathcal {I}\mathbf {Ii}\mathrm {Ii}
+\mathit {Ii}\mathbb {I}\mathsf {Ii}\mathnormal {Ii} &amp;\mathtt {Jj}\mathcal {J}\mathbf {Jj}\mathrm {Jj}
+\mathit {Jj}\mathbb {J}\mathsf {Jj}\mathnormal {Jj}\\
+\mathtt {Kk}\mathcal {K}\mathbf {Kk}\mathrm {Kk}
+\mathit {Kk}\mathbb {K}\mathsf {Kk}\mathnormal {Kk} &amp;\mathtt {Ll}\mathcal {L}\mathbf {Ll}\mathrm {Ll}
+\mathit {Ll}\mathbb {L}\mathsf {Ll}\mathnormal {Ll}\\
+\mathtt {Mm}\mathcal {M}\mathbf {Mm}\mathrm {Mm}
+\mathit {Mm}\mathbb {M}\mathsf {Mm}\mathnormal {Mm} &amp;\mathtt {Nn}\mathcal {N}\mathbf {Nn}\mathrm {Nn}
+\mathit {Nn}\mathbb {N}\mathsf {Nn}\mathnormal {Nn}\\
+\mathtt {Oo}\mathcal {O}\mathbf {Oo}\mathrm {Oo}
+\mathit {Oo}\mathbb {O}\mathsf {Oo}\mathnormal {Oo} &amp;\mathtt {Pp}\mathcal {P}\mathbf {Pp}\mathrm {Pp}
+\mathit {Pp}\mathbb {P}\mathsf {Pp}\mathnormal {Pp}\\
+\mathtt {Qq}\mathcal {Q}\mathbf {Qq}\mathrm {Qq}
+\mathit {Qq}\mathbb {Q}\mathsf {Qq}\mathnormal {Qq} &amp;\mathtt {Rr}\mathcal {R}\mathbf {Rr}\mathrm {Rr}
+\mathit {Rr}\mathbb {R}\mathsf {Rr}\mathnormal {Rr}\\
+\mathtt {Ss}\mathcal {S}\mathbf {Ss}\mathrm {Ss}
+\mathit {Ss}\mathbb {S}\mathsf {Ss}\mathnormal {Ss} &amp;\mathtt {Tt}\mathcal {T}\mathbf {Tt}\mathrm {Tt}
+\mathit {Tt}\mathbb {T}\mathsf {Tt}\mathnormal {Tt}\\
+\mathtt {Uu}\mathcal {U}\mathbf {Uu}\mathrm {Uu}
+\mathit {Uu}\mathbb {U}\mathsf {Uu}\mathnormal {Uu} &amp;\mathtt {Vv}\mathcal {V}\mathbf {Vv}\mathrm {Vv}
+\mathit {Vv}\mathbb {V}\mathsf {Vv}\mathnormal {Vv}\\
+\mathtt {Ww}\mathcal {W}\mathbf {Ww}\mathrm {Ww}
+\mathit {Ww}\mathbb {W}\mathsf {Ww}\mathnormal {Ww} &amp;\mathtt {Xx}\mathcal {X}\mathbf {Xx}\mathrm {Xx}
+\mathit {Xx}\mathbb {X}\mathsf {Xx}\mathnormal {Xx}\\
+\mathtt {Yy}\mathcal {Y}\mathbf {Yy}\mathrm {Yy}
+\mathit {Yy}\mathbb {Y}\mathsf {Yy}\mathnormal {Yy} &amp;\mathtt {Zz}\mathcal {Z}\mathbf {Zz}\mathrm {Zz}
+\mathit {Zz}\mathbb {Z}\mathsf {Zz}\mathnormal {Zz}\\
+\end{split}
+</texmath>
+<p><texmath textype='inline' type='inline'>{\cal ABCDEFGHIJKLMNOPQRSTUVWXYZ}</texmath></p>
+<p><texmath textype='inline' type='inline'> \bf a \mathrm {a \mathcal {c} d}</texmath></p>
+<p><texmath textype='inline' type='inline'>a^c_b</texmath>
+<texmath textype='inline' type='inline'>a_b^c</texmath></p>
+<p><texmath textype='inline' type='inline'>x\Box </texmath></p>
+<texmath textype='display' type='display'>\left|
+\begin{array}{lcr}
+AAAAAAA&amp;BBBBBCC&amp;CCCCCCC\\
+A&amp;B&amp;C\\
+\multicolumn{1}{c}{A}&amp;\multicolumn{1}{c}{B}&amp;\multicolumn{1}{c}{C}\\
+\multicolumn{1}{r}{A}&amp;\multicolumn{1}{r}{B}&amp;\multicolumn{r}{c}{C}\\
+\multicolumn{1}{l}{A}&amp;\multicolumn{1}{l}{B}&amp;\multicolumn{l}{c}{C}\\
+\begin{array}{cl}1&amp;22\\3&amp;4\end{array}&amp;\begin{array}{cc}1&amp;22\\3&amp;4\end{array}&amp;\begin{array}{cr}1&amp;22\\3&amp;4\end{array}\\
+\multicolumn{2}{c}{0123456789abcdef}&amp;C\\
+A&amp;\multicolumn{2}{c}{0123456789abcdef}\\
+\multicolumn{2}{r}{0123456789abcdef}&amp;C\\
+A&amp;\multicolumn{2}{l}{0123456789abcdef}\\
+A&amp;B&amp;C\\
+\end{array}
+\right|</texmath>
+<texmath textype='eqnarray*' type='display'>
+\left\lbrace \begin{array}{lcl}
+\dot{x} &amp; = &amp; Ax+g(x,u)\\
+y &amp; = &amp; Cx \\
+\multicolumn{3}{l}{x\in \mathbf {R}^n}
+\end{array}
+\right.
+</texmath>
+<p>a) <texmath textype='math' type='inline'> x1 </texmath>
+b) <texmath textype='inline' type='inline'> x2 </texmath>
+c)</p>
+<texmath textype='displaymath' type='display'> x3 </texmath>
+<p noindent='true'>d)</p>
+<texmath textype='display' type='display'> x4 </texmath>
+<p noindent='true'>e)</p>
+<texmath id-text='9' id='uid9' textype='equation' type='display'> x5 </texmath>
+<p>text A</p>
+<p noindent='true'>text B</p>
+<p noindent='true' spacebefore='8.53581pt'>text C</p>
+<p rend='center'>line one</p>
+<p rend='center'>this is the second line</p>
+<p><texmath textype='inline' type='inline'>1^e</texmath><font-overline>foo</font-overline><font-underline>bar</font-underline>.</p>
+<p><texmath textype='inline' type='inline'>1^e</texmath><font-overline>foo</font-overline><font-underline>bar</font-underline>.
+<font-small-caps-shape>Foo</font-small-caps-shape><font-small-caps-shape>Bar</font-small-caps-shape></p>
+<texmath id-text='10' id='uid10' textype='equation' type='display'>
+\begin{array}{lcl}
+\dot{x} &amp; = &amp; Ax+g(x,u)\\[2mm]
+y &amp; = &amp; Cx \\
+\multicolumn{3}{l}{x\in R^n}
+\end{array}
+</texmath>
+<table rend='inline'><row top-border='true'><cell halign='left' left-border='true'>a</cell>
+<cell right-border='true' halign='left'>b</cell>
+<cell halign='right'>c</cell>
+<cell right-border='true' halign='right'>d</cell>
+<cell halign='center'>e</cell>
+<cell right-border='true' halign='center'>f</cell>
+</row><row bottom-border='true' spaceafter='8.53581pt'><cell halign='left' left-border='true'>aaa</cell>
+<cell right-border='true' halign='left'>bbb</cell>
+<cell halign='right'>ccc</cell>
+<cell right-border='true' halign='right'>ddd</cell>
+<cell halign='center'>eee</cell>
+<cell right-border='true' halign='center'>fff</cell>
+</row><row><cell halign='left' left-border='true'>A</cell>
+<cell halign='left' cols='3'>BCD</cell>
+<cell halign='center'>E</cell>
+<cell right-border='true' halign='center'>F</cell>
+</row><row><cell top-border='true'/>
+<cell top-border='true'/>
+<cell top-border='true'/>
+</row><row><cell/>
+<cell/>
+<cell/>
+<cell/>
+<cell/>
+<cell top-border='true'/>
+</row><row bottom-border='true'><cell halign='left' left-border='true'>aaa</cell>
+<cell right-border='true' halign='left'>bbb</cell>
+<cell halign='right'>ccc</cell>
+<cell right-border='true' halign='right'>ddd</cell>
+<cell halign='center'>eee</cell>
+<cell right-border='true' halign='center'>fff</cell>
+</row></table>
+<texmath textype='display' type='display'> \arccos ^2 (x),\, \arcsin ^2(x) ,\, \arctan ^2(x) ,\, \arg ^2(x),\,
+\cos ^2(x) ,\, \cosh ^2(x) ,\, \cot ^2(x)</texmath>
+<texmath textype='display' type='display'> \coth ^2(x) ,\, \csc ^2(x),\, \deg ^2(x),\, \dim ^2(x),\, \exp ^2(x),\,
+\hom ^2(x),\, \ker ^2(x) ,\, \lg ^2(x)</texmath>
+<texmath textype='display' type='display'> \ln ^2(x),\, \log ^2(x),\, \Pr ^2(x),\, \sec ^2(x),\, \sin ^2(x) ,\,
+\sinh ^2(x),\, \tan ^2(x),\, \tanh ^2(x)</texmath>
+<texmath textype='display' type='display'> \det _{x=1},\, \gcd _{x=1},\, \inf _{x=1},\, \injlim _{x=1},\,
+\lim _{x=1},\, \liminf _{x=1},\,\limsup _{x=1},\,
+\max _{x=1},\, \min _{x=1},\, \projlim _{x=1},\, \sup _{x=1}
+</texmath>
+<p><texmath textype='inline' type='inline'>\stackrel{j}{\longrightarrow } \overset{*}{X} \underset{*}{X}
+\sqrt{abc} \@root n \of {abc} \@root n  \of {abc}
+\frac{abc}{xyz} \dfrac{abc}{xyz}
+</texmath></p>
+<texmath textype='display' type='display'>\binom{\frac{n+m}{2}}{n} \quad \tbinom{\frac{n+m}{2}}{n} \quad \dbinom{\frac{n+m}{2}}{n}\qquad {}^{\binom{\frac{n+m}{2}}{n} \quad \tbinom{\frac{n+m}{2}}{n} \quad \dbinom{\frac{n+m}{2}}{n}}</texmath>
+<p><texmath textype='inline' type='inline'>\Leftrightarrow </texmath></p>
+<p>1<font-super>st</font-super> x<font-super>ième</font-super> y<font-sub>some text</font-sub>.</p>
+<texmath textype='display' type='display'>\genfrac{}{}{}{}{1}{2}
+\genfrac[]{2.0pt}2{aaa}{bbb}
+\genfrac(){0.0pt}0{n}{m}
+</texmath>
+<p><texmath textype='inline' type='inline'>\genfrac{}{}{}0{a}{b}
+\genfrac{}{}{}1{a}{b}
+\genfrac{}{}{}2{a}{b}
+\genfrac{}{}{}3{a}{b} </texmath></p>
+<p><texmath textype='inline' type='inline'>{a\over b}\quad {a\above 1pt b}\quad {a\atop b}</texmath>
+<texmath textype='inline' type='inline'>{a\overwithdelims () b}\quad {a\abovewithdelims ()1pt b}\quad {a\atopwithdelims () b}</texmath>
+<texmath textype='inline' type='inline'>\genfrac(){2.0pt}{}{foo}{bar}</texmath></p>
+<texmath textype='display' type='display'>\frac{\frac{n+m}{2}}{n} \quad \tfrac{\frac{n+m}{2}}{n} \quad \dfrac{\frac{n+m}{2}}{n}</texmath>
+<texmath textype='display' type='display'>
+\sup _{x=2}y~
+\frac{1}{k}\log _2 c(f)\;
+\tfrac{1}{k}\log _2 c(f)\;
+\sqrt{\frac{1}{k}\log _2 c(f)}\;
+\sqrt{\dfrac{1}{k}\log _2 c(f)}
+</texmath>
+<p><texmath textype='inline' type='inline'>\genfrac(){2.84526pt}3{aaaaaaaaaaaaaaaaaa}{111111111}</texmath>
+<texmath textype='inline' type='inline'>\genfrac(){0.0pt}3{aaaaaaaaaaaaaaaaaa}{111111111}</texmath>
+<texmath textype='inline' type='inline'>\genfrac{}{}{}0{abc}{def}</texmath>
+<texmath textype='inline' type='inline'>\genfrac{}{}{}1{abc}{def}</texmath>
+<texmath textype='inline' type='inline'>\genfrac{}{}{}2{abc}{def}</texmath>
+<texmath textype='inline' type='inline'>\genfrac{}{}{}3{abc}{def}</texmath></p>
+<p><texmath textype='inline' type='inline'>\tilde{a},\tilde{z}, \tilde{a+b}</texmath></p>
+<p><texmath textype='inline' type='inline'>\overline{\tt P} P</texmath></p>
+<p>á ááá á &#xE1; &aacute;
+<texmath textype='inline' type='inline'>\hat{a} \acute{a} \bar{a} \dot{a} \breve{a}
+\check{a} \grave{a} \vec{a} \ddot{a} \tilde{a}
+</texmath></p>
+<texmath textype='display' type='display'>d=z^2=( I_t + \nabla I\vec{vvvv} +I div(\vec{vvvvv}) )^2,</texmath>
+<p><texmath textype='inline' type='inline'>a\hbox{b=1} c</texmath>
+<texmath textype='inline' type='inline'>a\hbox{b~1}~c</texmath></p>
+<p><texmath textype='inline' type='inline'>x^{y^\epsilon _\varepsilon }</texmath></p>
+<texmath id-text='11' id='uid11' textype='equation' type='display'>
+\vec{B}(\vec{r}) = \frac{\mu _0}{4\pi }\left\lbrace 
+\frac{3\vec{m}({\vec{r}}^{\prime })\cdot (\vec{r}-{\vec{r}}^{\prime })}{|\vec{r}-{\vec{r}}^{\prime }|^5}
+(\vec{r}-{\vec{r}}^{\prime }) - \frac{\vec{m}({\vec{r}}^{\prime })}{|\vec{r}-{\vec{r}}^{\prime }|^3}
+\right\rbrace . 
+</texmath>
+<p><texmath textype='inline' type='inline'>
+
+\left\Vert \left|\left[\left(\left\lbrace  \frac{x^1_2}{y^3_4}\right\rbrace \right)\right]\right|\right\Vert \left|\left|\left&lt;\left\langle \frac{x^1_2}{y^3_4}\right\rangle \right&gt;\right|\right|\left\lbrace \left\lceil \left\lfloor \frac{x^1_2}{y^3_4}\right\rfloor \right\rceil \right\rbrace []a\hspace{0.55542pt}b\hspace{1.111pt}c \hspace{2.22214pt}d \hspace{4.44443pt}e \hspace{8.88885pt}f
+</texmath></p>
+<p><texmath textype='inline' type='inline'>
+\left\moustache \left\uparrow \left\Uparrow \left\updownarrow \left\lgroup \frac{x^1_2}{y^3_4}\right\rgroup \right\Updownarrow \right\Downarrow \right\downarrow \right\moustache </texmath>
+<texmath textype='inline' type='inline'>
+\left \lmoustache \left \uparrow \left \Uparrow \left \updownarrow \left \lgroup \frac{x^1_2}{y^3_4}\right \rgroup \right \Updownarrow \right \Downarrow \right \downarrow \right \rmoustache </texmath>
+<texmath textype='inline' type='inline'> 
+\left\moustache \left\uparrow \left\Uparrow \left\updownarrow \left\lgroup \int _0^{\frac{x^1_2}{y^3_4}}\right\rgroup \right\Updownarrow \right\Downarrow \right\downarrow \right\moustache </texmath></p>
+<p><texmath textype='inline' type='inline'>\Longrightarrow </texmath>
+
+<texmath textype='inline' type='inline'>\cal X_y</texmath>and <texmath textype='inline' type='inline'>\cal X_yZ</texmath>
+<texmath textype='inline' type='inline'>\sin (x) + \cos ^2(x) </texmath> and <texmath textype='inline' type='inline'>\overbrace{xyz} ^t </texmath></p>
+<p><texmath textype='inline' type='inline'>\bigl [\frac{1}{a^2}\bigr [</texmath>
+<texmath textype='inline' type='inline'>\left[\frac{1}{b^2}\right[</texmath>
+<texmath textype='inline' type='inline'>[\frac{1}{x^2}[</texmath></p>
+<p noindent='true'><texmath textype='inline' type='inline'>\int f\mathopen )a+b\mathclose (=c+d</texmath>
+<texmath textype='inline' type='inline'>\int f(a+b)=c+d</texmath></p>
+<p><texmath textype='inline' type='inline'>a\limits \displaylimits \nolimits b</texmath></p>
+<p>wwwwwwwwwwwwa...b...c   d      e f$g%h&amp;ij k{l}m&#x131;n&#x266F;o&#x266E;p&#x266D;q_</p>
+<p noindent='true'><texmath textype='inline' type='inline'>a\dots b\ldots c\quad d\qquad e f\$g\%h\&amp;i\!j\,k\lbrace l\rbrace m\i n\sharp o\natural p\flat q\_</texmath></p>
+<p>Math spacing</p>
+<p noindent='true'><texmath textype='inline' type='inline'>xxxxx</texmath></p>
+<p noindent='true'><texmath textype='inline' type='inline'>x\,x\:x\;x\!x</texmath></p>
+<p noindent='true'><texmath textype='inline' type='inline'>a\,\,\,\,\,a\:\:\:\:\:a</texmath></p>
+<p noindent='true'><texmath textype='inline' type='inline'>a\;\;\;a\;\;\;\;a</texmath></p>
+<p noindent='true'><texmath textype='inline' type='inline'>!?\#\_.@\%\Vert /|</texmath></p>
+<texmath textype='display' type='display'>
+\mathop {\mathop {arg\,min}\nolimits _\Psi }\limits _{\theta \in \Theta }
+\Delta \left( {\mathop \Phi \nolimits _\theta \left( {\Omega _s }
+\right)-\Omega _t } \right)
+\qquad x_{y_z} = {x_y}_z=
+x^{y_z} = {x^y}_z=
+x_{y^z} = {x_y}^z=
+x^{y^z} = {x^y}^z
+\left\lbrace \lbrace \frac{2}{3}\rbrace \right\rbrace 
+</texmath>
+<p><texmath textype='inline' type='inline'>x=0123456789</texmath>
+<texmath textype='inline' type='inline'>\@root 3  \of {4}</texmath> <texmath textype='inline' type='inline'>\@root 3 \of {4}</texmath></p>
+<texmath id-text='12' id='uid12' textype='equation' type='display'>
+0=\hspace{11.38092pt}1
+</texmath>
+<p><texmath textype='inline' type='inline'> Â â &#x1EA4; &#x1EA5; &#x1EA6; &#x1EA7; &#x1EA8; &#x1EA9; &#x1EAA; &#x1EAB;
+&#x1EAC; &#x1EAD; &#x108; &#x109;</texmath>
+<texmath textype='inline' type='inline'> Ê ê &#x1EBE; &#x1EBF; &#x1EC0; &#x1EC1; &#x1EC2;
+&#x1EC3; &#x1EC4; &#x1EC5; &#x1EC6; &#x1EC7; &#x11C; &#x11D; &#x124; &#x125; Î î &#x134; &#x135; </texmath>
+<texmath textype='inline' type='inline'>
+Ô ô &#x1ED0; &#x1ED1; &#x1ED2; &#x1ED3; &#x1ED4; &#x1ED5; &#x1ED6; &#x1ED7;
+&#x1ED8; &#x1ED9; &#x15C; &#x15D; Û û &#x174; &#x175; &#x176; &#x177; &#x1E90; &#x1E91;
+Á á &#x1FA; &#x1FB; &#x1FC; &#x1FD; &#x1EA4; &#x1EA5; &#x1EAE; &#x1EAF;
+&#x106; &#x107; &#x1E08; &#x1E09; É é &#x1E16;
+&#x1E17; &#x1EBE; &#x1EBF; &#x1F4; &#x1F5; Í í </texmath>
+<texmath textype='inline' type='inline'>&#x1E2E; &#x1E2F; &#x1E30; &#x1E31; &#x139; &#x13A; &#x1E3E;
+&#x1E3F; &#x143; &#x144; Ó ó &#x1FE; &#x1FF; &#x1E4C; &#x1E4D; &#x1E52; &#x1E53; &#x1ED0;
+&#x1ED1; &#x1EDA; &#x1EDB;</texmath>
+<texmath textype='inline' type='inline'> &#x1E54; &#x1E55; &#x154; &#x155; &#x15A; &#x15B;
+&#x1E64; &#x1E65; Ú ú &#x1D7; &#x1D8; &#x1E78; &#x1E79; &#x1EE8; &#x1EE9;
+&#x1E82; &#x1E83; Ý ý &#x179; &#x17A;
+À à &#x1EA6; &#x1EA7; &#x1EB0; &#x1EB1; È è &#x1E14; &#x1E15; &#x1EC0;
+&#x1EC1; Ì ì &#x1F8; &#x1F9; </texmath>
+<texmath textype='inline' type='inline'>Ò ò &#x1E50; &#x1E51; &#x1ED2; &#x1ED3;
+&#x1EDC; &#x1EDD; Ù ù &#x1DB; &#x1DC; &#x1EEA; &#x1EEB; &#x1E80; &#x1E81; &#x1EF2;&#x1EF3;
+Ä ä &#x1DE; &#x1DF; Ë ë &#x1E26; &#x1E27; Ï ï &#x1E2E; &#x1E2F; Ö ö
+&#x22A; &#x22B; &#x1E4E; &#x1E4F; &#x1E97;</texmath>
+<texmath textype='inline' type='inline'> Ü ü &#x1E7A; &#x1E7B; &#x1DB; &#x1DC;
+&#x1D7; &#x1D8; &#x1D9; &#x1DA; &#x1E84; &#x1E85; &#x1E8C; &#x1E8D; &#x178; ÿ
+Ç ç &#x1E08; &#x1E09; &#x1E10; &#x1E11; &#x228; &#x229; &#x1E1C; &#x1E1D; </texmath>
+<texmath textype='inline' type='inline'>
+&#x1E28; &#x1E29; &#x122; &#x123; &#x136; &#x137; &#x13B; &#x13C; &#x145; &#x146; &#x156; &#x157; &#x15E; &#x15F; &#x162; &#x163;
+&#x200; &#x201; &#x204; &#x205; &#x208; &#x209; &#x20C; &#x20D; &#x210; &#x211; &#x214; &#x215;
+&#x102; &#x103; &#x1EB0; &#x1EB1; &#x1EAE; &#x1EAF; &#x1EB2; &#x1EB3; &#x1EB4; &#x1EB5;
+&#x1EB6; &#x1EB7;</texmath>
+<texmath textype='inline' type='inline'> &#x114; &#x115; &#x1E1C; &#x1E1D; &#x11E; &#x11F; &#x12C; &#x12D;
+&#x14E; &#x14F; &#x16C; &#x16D;
+&#x1CD; &#x1CE; &#x10C; &#x10D; &#x10E; &#x10F; &#x11A; &#x11B; &#x1E6; &#x1E7; &#x21E; &#x21F; &#x1E8; &#x1E9;
+&#x1CF; &#x1D0; &#x1F0; &#x13D; &#x13E; &#x147; &#x148; </texmath>
+<texmath textype='inline' type='inline'> &#x1D1;
+&#x1D2; &#x158; &#x159; &#x160; &#x161; &#x164; &#x165; &#x1D3; &#x1D4; &#x1D9; &#x1DA; &#x1E66;
+&#x1E67; &#x17D; &#x17E;
+&#x150; &#x151; &#x170; &#x171;</texmath>
+<texmath textype='inline' type='inline'>
+&#x1EDA; &#x1EDB; &#x1EDC; &#x1EDD; &#x1EDE; &#x1EDF; &#x1EE0; &#x1EE1;
+&#x1EE2; &#x1EE3;</texmath>
+<texmath textype='inline' type='inline'> &#x1EE8; &#x1EE9; &#x1EEA; &#x1EEB; &#x1EEC; &#x1EED; &#x1EEE;
+&#x1EEF; &#x1EF0; &#x1EF1;
+&#x1EA2; &#x1EA3; &#x1EA8; &#x1EA9; &#x1EB2; &#x1EB3; &#x1EBA; &#x1EBB; &#x1EC2; &#x1EC3; &#x1EC8;
+&#x1EC9;</texmath>
+<texmath textype='inline' type='inline'> &#x1ECE; &#x1ECF; &#x1ED4; &#x1ED5; &#x1EDE; &#x1EDF; &#x1EE6; &#x1EE7;
+&#x1EEC; &#x1EED; &#x1EF6; &#x1EF7;
+&#x104; &#x105; &#x118; &#x119; &#x12E; &#x12F; &#x1EA; &#x1EB; &#x1EC; &#x1ED; &#x172; &#x173;
+Å å &#x16E; &#x16F; &#x1E98; &#x1E99;
+&#x1EA0; &#x1EA1; &#x1EAC; &#x1EAD; &#x1EB6; &#x1EB7; &#x1E04; &#x1E05; &#x1E0C; &#x1E0D; &#x1EB8; &#x1EB9;
+&#x1EC6; &#x1EC7; &#x1E24; &#x1E25; &#x1ECA; &#x1ECB; &#x1E32; &#x1E33; &#x1E36; &#x1E37; &#x1E38; &#x1E39;</texmath>
+<texmath textype='inline' type='inline'>
+&#x1E42; &#x1E43; &#x1E46; &#x1E47; &#x1ECC; &#x1ECD; &#x1ED8; &#x1ED9; &#x1EE2; &#x1EE3;
+&#x1E5A; &#x1E5B; &#x1E5C; &#x1E5D; &#x1E62; &#x1E63; &#x1E68; &#x1E69; &#x1E6C;</texmath>
+<texmath textype='inline' type='inline'>
+&#x1E6D; &#x1EE4; &#x1EE5; &#x1EF0; &#x1EF1; &#x1E7E;
+&#x1E7F; &#x1E88; &#x1E89; &#x1EF4; &#x1EF5; &#x1E92; &#x1E93;
+&#x1E00; &#x1E01;
+&#x1E06; &#x1E07; &#x1E0E; &#x1E0F; &#x1E96; &#x1E34; &#x1E35; &#x1E3A; &#x1E3B;
+&#x1E48; &#x1E49; &#x1E5E; &#x1E5F; &#x1E6E; &#x1E6F; &#x1E94; &#x1E95;
+&#x202; &#x203; &#x206; &#x207; &#x20A; &#x20B; &#x20E; &#x20F; &#x212; &#x213; &#x216; &#x217;
+&#x1E1A; &#x1E1B; &#x1E2C; &#x1E2D; &#x1E74; &#x1E75;
+&#x1E12; &#x1E13; &#x1E18; &#x1E19; &#x1E3C; &#x1E3D; &#x1E4A; &#x1E4B; &#x1E70; &#x1E71; &#x1E76; &#x1E77;
+&#x100; &#x101; &#x1DE; &#x1DF; &#x1E0; &#x1E1; &#x1E2;&#x1E3;&#x112; &#x113; &#x1E16; &#x1E17;
+&#x1E14; &#x1E15; &#x1E20; &#x1E21; &#x126; &#x127;</texmath>
+<texmath textype='inline' type='inline'>
+&#x12A; &#x12B; &#x1E38; &#x1E39; &#x14C; &#x14D; &#x1EC; &#x1ED; &#x22A; &#x22B; &#x22C;
+&#x22D; &#x230; &#x231; &#x1E50; &#x1E51; &#x1E52; &#x1E53;</texmath>
+<texmath textype='inline' type='inline'> &#x1E5C; &#x1E5D;
+&#x166; &#x167; &#x16A; &#x16B; &#x1E7A; &#x1E7B; &#x232; &#x233;
+&#x226; &#x227; &#x1E0; &#x1E1; &#x1E02; &#x1E03; &#x10A; &#x10B; &#x1E0A; &#x1E0B; &#x116; &#x117; &#x1E1E; &#x1E1F; &#x120; &#x121; &#x1E22;
+&#x1E23; &#x130; </texmath>
+<texmath textype='inline' type='inline'>&#x13F; &#x140; &#x1E40; &#x1E41; &#x1E44; &#x1E45; &#x22E; &#x22F; &#x230; &#x231; &#x1E56; &#x1E57; &#x1E58; &#x1E59; </texmath>
+<texmath textype='inline' type='inline'>
+&#x1E60;
+&#x1E61; &#x1E68; &#x1E69; &#x1E66; &#x1E67; &#x1E64; &#x1E65; &#x1E6A; &#x1E6B; &#x1E86; &#x1E87; &#x1E8A;
+&#x1E8B; &#x1E8E; &#x1E8F; &#x17B; &#x17C;
+</texmath></p>
+<p><texmath textype='inline' type='inline'>B</texmath></p>
+<p><texmath textype='inline' type='inline'> \mml@font@normal  ab+2c=DE\mml@font@upright  ab+2c=DE\mml@font@bold  ab+2c=DE\mml@font@italic  ab+2c=DE\mml@font@bolditalic  ab+2c=DE\mml@font@script  ab+2c=DE\mml@font@boldscript  ab+2c=DE\mml@font@fraktur  ab+2c=DE\mml@font@doublestruck  ab+2c=DE\mml@font@boldfraktur  ab+2c=DE\mml@font@sansserif  ab+2c=DE\mml@font@boldsansserif  ab+2c=DE\mml@font@sansserifitalic  ab+2c=DE\mml@font@sansserifbolditalic  ab+2c=DE\mml@font@monospace  ab+2c=DE</texmath></p>
+<p><texmath textype='inline' type='inline'>Xx\mathcal {Cal}\mathrm {Rm}\mathbf {Bf}\mathsf {Sf}\mathtt {Tt}\mathtt {x}\mathtt {y+1}\mathnormal {No} \mathit {It}\mathfrak {Fr}</texmath>
+<texmath textype='inline' type='inline'>Xx\mathcal {Cal}\mathrm {Rm}\mathbf {Bf}\mathsf {Sf}\mathtt {Tt}\mathtt {x}\mathtt {y+1}\mathnormal {No} \mathit {It}\mathfrak {Fr}</texmath>
+
+<texmath textype='inline' type='inline'>\frac{\mathit {\mathbf {foo}}}{\mathrm {bar}+1}=3</texmath>
+
+<texmath textype='inline' type='inline'>a\text{b=1} c</texmath></p>
+<p>oooooooooooooo
+<texmath textype='inline' type='inline'>a\myhbox{b=1} c</texmath>
+<texmath textype='inline' type='inline'>a\text{b=1} c</texmath>
+<texmath textype='inline' type='inline'>a\mbox{b=1} c</texmath>
+<texmath textype='inline' type='inline'>a\hbox{b=1} c</texmath></p>
+<p><texmath tag='8-2-3' textype='inline' type='inline'>a\mbox{b=1} c</texmath></p>
+<p><texmath textype='inline' type='inline'>\begin{pmatrix}
+\binom{1}{2}&amp;\int _0^\infty f(x)dx\\[2cm]
+\mathfrak {W}_2&amp;\text{xyz}=\sqrt{xxyyzz}
+\end{pmatrix}</texmath></p>
+<p>signal <texmath textype='inline' type='inline'>\bar{x }\in \mathcal {F} (y )</texmath> with smallest support.</p>
+<p><texmath textype='inline' type='inline'>\mbox{(\ref {W102})}=(\ref {W102})=\mbox{(\ref {W102})}</texmath></p>
+<texmath id-text='5' id='uid13' textype='eqnarray' type='display'>
+a &amp; = &amp; b \\
+&amp; = &amp; c
+\mbox{by (\ref {eqn:main2})} </texmath>
+<texmath id-text='5' id='uid14' textype='display' type='display'>1234</texmath>
+<p>Non math version
+Is upper case : BAR</p>
+<p noindent='true'>Is lower case : bar</p>
+<p noindent='true'>Is upper case : FOO</p>
+<p noindent='true'>Is lower case : foo</p>
+<p noindent='true'>Is upper case : BAR</p>
+<p noindent='true'>Is upper case : BAR</p>
+<p noindent='true'>Is lower case : bar</p>
+<p noindent='true'>Is lower case : bar</p>
+<p noindent='true'>Is upper case : <texmath textype='inline' type='inline'>BAR</texmath></p>
+<p noindent='true'>Is lower case : <texmath textype='inline' type='inline'>bar</texmath></p>
+<p noindent='true'>Is upper case : <texmath textype='inline' type='inline'>FOO</texmath></p>
+<p noindent='true'>Is lower case : <texmath textype='inline' type='inline'>foo</texmath></p>
+<p noindent='true'>Is upper case : <texmath textype='inline' type='inline'>BAR</texmath></p>
+<p noindent='true'>Is upper case : <texmath textype='inline' type='inline'>BAR</texmath></p>
+<p noindent='true'>Is lower case : <texmath textype='inline' type='inline'>bar</texmath></p>
+<p noindent='true'>Is lower case : <texmath textype='inline' type='inline'>bar</texmath></p>
+<p noindent='true'><texmath textype='inline' type='inline'>{}\left\lbrace \begin{array}{ll} 2 h(n) &amp;\text{ for $0 \le n \le N/2-1$ }\\0 &amp;\text{ otherwise }\\\end{array}\right. </texmath></p>
+<texmath label='1' textype='display' type='display'>x</texmath>
+<texmath textype='display' type='display'>\rm \binom{\frac{\mathchoice{\displaystyle+}{\textstyle+}{\scriptstyle+}{\scriptscriptstyle+}m}{2}}{\mathchoice{\displaystyle0}{\textstyle0}{\scriptstyle0}{\scriptscriptstyle0}} \quad \tbinom{\frac{\mathchoice{\displaystyle+}{\textstyle+}{\scriptstyle+}{\scriptscriptstyle+}m}{2}}{\mathchoice{\displaystyle0}{\textstyle0}{\scriptstyle0}{\scriptscriptstyle0}} \quad \dbinom{\frac{\mathchoice{\displaystyle+}{\textstyle+}{\scriptstyle+}{\scriptscriptstyle+}m}{2}}{\mathchoice{\displaystyle0}{\textstyle0}{\scriptstyle0}{\scriptscriptstyle0}}\qquad {}^{\binom{\frac{\mathchoice{\displaystyle+}{\textstyle+}{\scriptstyle+}{\scriptscriptstyle+}m}{2}}{\mathchoice{\displaystyle0}{\textstyle0}{\scriptstyle0}{\scriptscriptstyle0}} \quad \tbinom{\frac{\mathchoice{\displaystyle+}{\textstyle+}{\scriptstyle+}{\scriptscriptstyle+}m}{2}}{\mathchoice{\displaystyle0}{\textstyle0}{\scriptstyle0}{\scriptscriptstyle0}} \quad \dbinom{\frac{\mathchoice{\displaystyle+}{\textstyle+}{\scriptstyle+}{\scriptscriptstyle+}m}{2}}{\mathchoice{\displaystyle0}{\textstyle0}{\scriptstyle0}{\scriptscriptstyle0}}}</texmath>
+<p>Additional tests
+<texmath textype='inline' type='inline'>\hspace{20.0pt}, \hspace*{56.9055pt} 12&gt;10\,\$</texmath>
+<texmath textype='inline' type='inline'>\left[\mathit {x}^1_2 y^{22}_{33}\right\lbrace </texmath>
+<texmath textype='inline' type='inline'>\overline{x}\frac{1}{2} \mathmi[A='B']{c}</texmath>
+<texmath textype='inline' type='inline'>\genfrac{}{}{2.0pt}3{u}{v} \genfrac[]{}{}{u}{v}</texmath>
+<texmath textype='inline' type='inline'>\sqrt{10} \@root 3  \of {4} \@root 6 \of {7}</texmath>
+If <texmath textype='inline' type='inline'>x\in \emptyset </texmath> then <texmath textype='inline' type='inline'>\forall n&gt;0, \dfrac{1}{n^2}&lt;0</texmath></p>
+<p>Kumar test
+<texmath textype='inline' type='inline'>x_{\mbox{{\scriptsize {H\,{\sc i}}}}}</texmath>
+<texmath textype='inline' type='inline'>x_{\mbox{{\scriptsize {H\,\quad \qquad \!\,\:\;{\sc i}}}}}</texmath>
+Testing references <ref target='uid14'/> <ref target='uid1'/>
+<texmath xx='yy' tag='8-2-3' textype='inline' type='inline'>a\mbox{b=1} c</texmath>
+
+
+<texmath textype='inline' type='inline'>\varPi =\varPsi </texmath></p>
+<texmath id-text='5' id='uid15' textype='align' type='display'> 123&amp;34\\56&amp;78</texmath>
+<texmath textype='align*' type='display'> 123&amp;34\\56&amp;78</texmath>
+<texmath id-text='5' id='uid16' textype='flalign' type='display'> 123&amp;34\\56&amp;78</texmath>
+<texmath textype='flalign*' type='display'> 123&amp;34\\56&amp;78</texmath>
+<texmath id-text='5' id='uid17' textype='alignat' type='display'>23&amp;34\\56&amp;78</texmath>
+<texmath textype='alignat*' type='display'>23&amp;34\\56&amp;78</texmath>
+<texmath id-text='5' id='uid18' textype='xalignat' type='display'>23&amp;34\\56&amp;78</texmath>
+<texmath textype='xalignat*' type='display'>23&amp;34\\56&amp;78</texmath>
+<texmath id-text='5' id='uid19' textype='xxalignat' type='display'>23&amp;34\\56&amp;78</texmath>
+<texmath textype='xxalignat*' type='display'>23&amp;34\\56&amp;78</texmath>
+<p noindent='true'>
+ok</p>
+<p noindent='true'>AT_DOC_END</p></div0>
+</ramain>

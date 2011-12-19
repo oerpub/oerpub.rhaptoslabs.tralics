@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<!DOCTYPE unknown SYSTEM 'unknown.dtd'>
+<!-- Translated from latex by tralics 2.13.1, date: 2008/09/21-->
+<unknown page-numbering='false'>
+<abstract pos='center'>
+<p><hi rend='small'>This file tests the html package.</hi></p>
+<p><hi rend='small'>It also tests abstract and keyval</hi></p>
+</abstract>
+<anchor id-text='1' id='uid1'/><p>Some font tests</p>
+<p><hi rend='it,sansserif,boldextended'>B
+ C </hi><hi rend='it,sansserif,semibold'>D
+</hi><hi rend='sc,sansserif,semibold'>E
+</hi><hi rend='sc,tt,semibold'>E </hi></p>
+<p>xxxx
+
+Some dummy tex file</p>
+<p>This is piece of code that comes from torture
+ &#x31;
+2
+3
+4</p>
+<p><xref url='url/bar_x'>foo</xref>
+<xref url='url/bar_x'>foo</xref>
+<xref url='url/bar_x'>foo</xref></p>
+<p>A<ref target='uid1'/>B
+A<ref target='uid1'/>B
+A<ref target='uid1' rend='page'/>B
+A<ref target='uid1' rend='page'/>B
+A
+A
+foo
+foo</p>
+<p>B<cit><ref target='bid0'/></cit>
+B<cit><ref target='bid0'>p 100</ref></cit>
+B<cit><ref target='bid0'>p101</ref></cit>
+B<cit><ref target='bid0'>p102</ref></cit>
+B
+B
+B</p>
+<p>a
+a
+a
+a 
+a
+a</p>
+<p>yeahok
+<xref url='Some url'>Some url</xref></p>
+<p><formula type='inline'><math xmlns='http://www.w3.org/1998/Math/MathML'><msubsup><mi>a</mi> <mn>2</mn> <mn>3</mn> </msubsup></math></formula></p>
+<p>seen 1 in Fooseen 2 in Barseen dbar in Bar</p>
+<biblio>
+<citation from='year' key='CGR00' id='bid2' userid='cite:CGR2000' type='inproceedings'>
+<bauteurs><bpers prenom='D.' nom='Carlisle' prenomcomplet='David'/><bpers prenom='M.' nom='Goossens' prenomcomplet='Michel'/><bpers prenom='S.' nom='Rahtz' prenomcomplet='Sebastian'/></bauteurs>
+<btitle>De XML à PDF avec <hi rend='tt'>xmltex</hi> et Passive<TeX/></btitle>
+<bbooktitle>Cahiers Gutenberg</bbooktitle>
+<bnumber>35-36</bnumber>
+<bpages>79-114</bpages>
+<byear>2000</byear>
+</citation>
+<citation from='year' key='HP99' id='bid1' userid='cite:place99' type='inproceedings'>
+<bauteurs><bpers prenom='Y.' nom='Haralambous' prenomcomplet='Yannis'/><bpers prenom='J.' nom='Place' prenomcomplet='John'/></bauteurs>
+<btitle>Produire du MathML et autres ...ML à partir d'<formula type='inline'><math xmlns='http://www.w3.org/1998/Math/MathML'><mi>&Omega;</mi></math></formula> : <formula type='inline'><math xmlns='http://www.w3.org/1998/Math/MathML'><mi>&Omega;</mi></math></formula> se généralise</btitle>
+<bbooktitle>Cahiers Gutenberg</bbooktitle>
+<bnumber>33-34</bnumber>
+<bpages>173-182</bpages>
+<byear>1999</byear>
+</citation>
+<citation from='year' key='Knu84' id='bid0' userid='cite:texbook' type='book'>
+<bauteurs><bpers prenom='D. E.' nom='Knuth' prenomcomplet='Donald E.'/></bauteurs>
+<btitle>The <TeX/>book</btitle>
+<bpublisher>Addison Wesley</bpublisher>
+<byear>1984</byear>
+</citation>
+<citation from='year' key='Lou88' id='bid3' userid='cite:louarn88' type='article'>
+<bauteurs><bpers prenom='P.' nom='Louarn' prenomcomplet='Philippe'/></bauteurs>
+<btitle>Une expérience d'utilisation de LaTeX : le Rapport d'activité de l'INRIA</btitle>
+<bjournal>Cahiers Gutenberg</bjournal>
+<bnumber>0</bnumber>
+<bmonth>apr</bmonth>
+<byear>1988</byear>
+<bpages>17-24</bpages>
+</citation></biblio><p>THE FUNNY TEST</p>
+<p>&#x31;
+2
+3
+4</p>
+<p>&#x2701;&#x2702;&#x2703;&#x2704;&#x260E;&#x2706;&#x2707;&#x2708;&#x2709;&#x261B;&#x261A;&#x261E;&#x261C;&#x270C;&#x270D;&#x270F;&#x2710;&#x270E;&#x2711;&#x2712;&#x2713;&#x2714;&#x2715;&#x2716;&#x2717;&#x2719;&#x271A;&#x271C;&#x271B;&#x271D;&#x271E;&#x271F;&#x2720;&#x2721;&#x2722;&#x2723;&#x2724;&#x2725;&#x2726;&#x2728;&#x2729;&#x2605;&#x2729;&#x272A;&#x272B;&#x272C;&#x272D;&#x272E;&#x272F;&#x2730;&#x2731;&#x2732;&#x2733;&#x2734;&#x2735;&#x2736;&#x2737;&#x2738;&#x2739;&#x273A;&#x273B;&#x273C;&#x273D;&#x273E;&#x273F;&#x2740;&#x2741;&#x2742;&#x2743;&#x2749;&#x274A;&#x274B;&#x2748;&#x2747;&#x2744;&#x2746;&#x2745;&#x25CF;&#x274D;&#x274F;&#x2750;&#x2751;&#x2752;&#x25B2;&#x25BC;&#x25C6;&#x2756;&#x25D7;&#x25D6;&#x2758;&#x2759;&#x275A;&#x279F;&#x27A6;&#x27A5;&#x27A7;&#x27B2;</p>
+<p>12,345
+123,456
+1,234,567
+12,345,678
+1 234 567 890 123 456 789 012 345 678 901 234 567 890</p>
+<p>a&#x316; a&#x340;&#x323; a&#x340;&#x323;  a&#x300;&#x331; à
+e&#x317; e&#x301;&#x331; e&#x301;&#x331; é
+o&#x32D; o&#x302;&#x323; o&#x302;&#x323; ô
+u&#x330; u&#x342;&#x323; u&#x342;&#x323; &#x169;
+a&#x324; ä
+&#x119; e&#x30B;
+o&#x325; o&#x331;&#x30A; o&#x331;&#x30A; o&#x30A;
+u&#x32C; u&#x301;&#x32C; a&#x301;&#x32C; &#x1D4;
+a&#x32F; a&#x320;&#x306; a&#x320;&#x306; &#x103;
+e&#x331; &#x113;
+o&#x323; o&#x301;&#x323; o&#x301;&#x323; a&#x310; u&#x307; &#x203F;au a&#x361;e</p>
+<p>À È Ì Ò Ù &#x1F8; &#x1E80; &#x1EF2; à è ì ò ù &#x1F9; &#x1E81; &#x1EF3; x&#x300;</p>
+<p>Á É Í Ó Ú Ý &#x106; &#x139; &#x143; &#x154; &#x15A; &#x179; &#x1F4; &#x1E30; &#x1E3E; &#x1E54; &#x1E82; &#x1FC; &#x1FA; &#x1FE; &#x1FD; &#x1FB; &#x1FF; á é í ó ú ý &#x107; &#x13A; &#x144; &#x155; &#x15B; &#x17A; &#x1F5; &#x1E31; &#x1E3F; &#x1E55; &#x1E83; v&#x301;</p>
+<p>Â Ê Î Ô Û &#x108; &#x11C; &#x124; &#x134; &#x15C; &#x174; &#x176; &#x1E90; â ê î ô û &#x109; &#x11D; &#x125; &#x135; &#x15D; &#x175; &#x177; &#x1E91;</p>
+<p>Ã Ñ Õ &#x168; &#x128; &#x1E7C; &#x1EBC; &#x1EF8; &#x129; õ ã ñ õ &#x129; õ &#x1E7D; &#x1EBD; &#x1EF9; w&#x303;</p>
+<p>Ä Ë Ï Ö Ü &#x178; &#x1E26; &#x1E84; &#x1E8C; ä ë ï ö ü ÿ &#x1E27; &#x1E85; &#x1E8D; &#x1E97; z&#x30E;</p>
+<p>&#x150; &#x170; &#x151; &#x171; e&#x30B;</p>
+<p>Å &#x16E; å &#x16F; &#x1E98; &#x1E99; e&#x30A;</p>
+<p>&#x10C; &#x10E; &#x11A; &#x13D; &#x147; &#x158; &#x160; &#x164; &#x17D; &#x1CD; &#x1CF; &#x1D3; &#x1E6; &#x1E8; &#x21E; &#x10D; &#x10F; &#x11B; &#x13E; &#x148; &#x159; &#x161; &#x165; &#x17E; &#x1CE; &#x1D0; &#x1D4; &#x1E7; &#x1E9; &#x21F; &#x1F0; x&#x30C;</p>
+<p>&#x102; &#x114; &#x11E; &#x12C; &#x14E; &#x16C; &#x103; &#x115; &#x11F; &#x12D; &#x14F; &#x16D; x&#x306;</p>
+<p>&#x100; &#x112; &#x126; &#x12A; &#x14C; &#x166; &#x16A; &#x232; &#x1E20; &#x1E2; &#x1E3; &#x101; &#x113; &#x127; &#x12B; &#x14D; &#x167; &#x16B; &#x233; &#x1E21;</p>
+<p>&#x226; &#x1E02; &#x10A; &#x1E0A; &#x116; &#x1E1E; &#x120; &#x1E22; &#x130; &#x13F; &#x1E40; &#x1E44; &#x22E; &#x1E56; &#x1E58; &#x1E60; &#x1E6A; &#x1E86; &#x1E8A; &#x1E8E; &#x17B; &#x227; &#x1E03; &#x10B; &#x1E0B; &#x117; &#x121; &#x1E23; &#x140; &#x1E41; &#x1E45; &#x22F; &#x1E57; &#x1E59; &#x1E61; &#x1E6B; u&#x307; v&#x307; &#x1E87; &#x17C; &#x1E8F; &#x17C; q&#x307;</p>
+<p>Ç &#x122; &#x136; &#x13B; &#x145; &#x156; &#x15E; &#x162; &#x228; &#x1E10; &#x1E28; ç &#x123; &#x137; &#x13C; &#x146; &#x157; &#x15F; &#x163; &#x229; &#x1E11; &#x1E29; b&#x327;</p>
+<p>&#x104; &#x118; &#x12E; &#x1EA; &#x172; &#x105; &#x119; &#x12F; &#x1EB; &#x173; b&#x328;</p>
+<p>&#x1E00; E&#x325; I&#x325; O&#x325; U&#x325; R&#x325; &#x1E01; e&#x325; i&#x325; o&#x325; u&#x325; r&#x325; y&#x325;</p>
+<p>&#x1E06; &#x1E0E; &#x1E34; &#x1E3A; &#x1E48; &#x1E5E; &#x1E6E; &#x1E94; &#x1E07; &#x1E0F; &#x1E35; &#x1E3B; &#x1E49; &#x1E5F; &#x1E6F; &#x1E95; &#x1E96; e&#x320;</p>
+<p>&#x1E04; &#x1E0C; &#x1E24; &#x1E32; &#x1E36; &#x1E42; &#x1E46; &#x1E5A; &#x1E62; &#x1E6C; &#x1E7E; &#x1E88; &#x1E92; &#x1EA0; &#x1EB8; &#x1ECA; &#x1ECC; &#x1EE4; &#x1EF4; &#x1E05; &#x1E0D; &#x1E25; &#x1E33; &#x1E37; &#x1E43; &#x1E47; &#x1E5B; &#x1E63; &#x1E6D; &#x1E7F; &#x1E89; &#x1E93; &#x1EA1; &#x1EB9; &#x1ECB; &#x1ECD; &#x1EE5; &#x1EF5; c&#x323;</p>
+<p>&#x202; &#x206; &#x20A; &#x20E; &#x216; &#x212; &#x203; &#x207; &#x20B; &#x20F; &#x217; &#x213; x&#x311;</p>
+<p>&#x1E1A; &#x1E2C; &#x1E74; &#x1E1B; &#x1E2D; &#x1E75; o&#x330;</p>
+<p>&#x1E12; &#x1E18; &#x1E3C; &#x1E4A; &#x1E70; &#x1E76; &#x1E13; &#x1E19; &#x1E3D; &#x1E4B; &#x1E71; &#x1E77; a&#x32D; 
+&#x1E00; &#x1E01; e&#x325; 
+&#x1EA2; &#x1EBA; &#x1EC8; &#x1ECE; &#x1EE6; &#x1EF6; &#x1EA3; &#x1EBB; &#x1EC9; &#x1ECF; &#x1EE7; &#x1EF7; x&#x309;</p>
+<p>t&#x32A; t&#x32A; d&#x33A; d&#x33A;
+o&#x339; o&#x339; o&#x31C; o&#x31C;
+g&#x311; g&#x311; &#x254;&#x31F; o&#x31F;
+e&#x31E; e&#x31E; &#x25B;&#x31D; e&#x31D;
+u&#x318; u&#x318; &#x259;&#x319; e&#x319;
+e&#x33D; e&#x33D; k&#x32B; k&#x32B;
+t&#x33C; t&#x33C;</p>
+<p>a&#x316; a&#x316; a&#x340;&#x323; a&#x340;&#x323; a&#x300;&#x331; à
+e&#x317; e&#x317; e&#x301;&#x331; e&#x301;&#x331; é
+o&#x32D; o&#x32D; o&#x302;&#x323; o&#x302;&#x323; ô
+u&#x330; u&#x330; u&#x342;&#x323; u&#x342;&#x323; &#x169;
+a&#x324; a&#x324; ä
+&#x119; &#x119; e&#x30B;
+o&#x325; u&#x325; o&#x331;&#x30A; o&#x331;&#x30A; o&#x30A;
+u&#x32C; u&#x32C; u&#x301;&#x32C; a&#x301;&#x32C; &#x1D4;
+a&#x32F; a&#x32F; a&#x320;&#x306; a&#x320;&#x306; &#x103;
+e&#x331; e&#x331; &#x113;
+o&#x323; e&#x323; o&#x301;&#x323; o&#x301;&#x323; a&#x310; u&#x307;
+&#x203F;au a&#x361;eg&#x361;b</p>
+<p>TEST1 <hi rend='turned'>f</hi> &#x29E; &#x279; &#x287; &#x28D;
+&#x25F; &#x272; &#x127; &#x26C; &#x26E;
+A dOg, B kæt ma<hi rend='sup'>214</hi></p>
+<p>Test2 <hi rend='sc'>E</hi> <hi rend='sc'>J</hi> <hi rend='sc'>A</hi> &#x29C; &#x29F; <hi rend='sc'>U</hi> &#x299; &#x262; &#x280;</p>
+<p>Test3 &#x256; &#x26D; &#x273; &#x27D; &#x27B; &#x282; &#x288; &#x290;</p>
+<p>Test4 &#x29B; &#x253; &#x257; &#x260; &#x284; &#x298;</p>
+<p>a, <hi rend='rhook'>a</hi>, &#x250;, &#x251;, &#x252;,
+<hi rend='inv-script'>a</hi>, æ, <hi rend='lig'>ao</hi>, &#x1D00;, <hi rend='lhook'>4</hi>,
+<hi rend='inv-sc'>a</hi>, <hi rend='sc-lig'>ao</hi>,
+&#x28C;, <hi rend='s'>&#x394;</hi></p>
+<p>b, &#x180;, b&#x336;, &#x44C;, &#x44A;,&#x253;, &#x299;, &#x3B2;</p>
+<p>c, c&#x336;, &#x10D;, ç, &#x188;, &#x255;, &#x297;,
+<hi rend='var'>&#x297;</hi>, <hi rend='var'>&#x297;</hi>, <hi rend='var'>&#x297;</hi></p>
+<p>d, &#x111;, d&#x336;, <hi rend='frhook'>d</hi>, <hi rend='frhook-var'>d</hi>, &#x257;,&#x256;,
+<hi rend='ht-rtail'>d</hi>, &#x221;, <hi rend='lig'>db</hi>, &#x2A3;, &#x2A5;,
+&#x2A4;, <hi rend='lig'>&#x221;&#x291;</hi>, ð</p>
+<p>e, e&#x322;, &#x259;, &#x25A;, &#x258;, &#x1D07;,
+&#x25B;, &#x25B;&#x322;, &#x29A;, &#x25C;,
+&#x25D;, &#x25E;</p>
+<p>f, <hi rend='sc'>F</hi></p>
+<p>&#x261;, &#x261;&#x336;, &#x261;&#x330;, &#x261;, g, &#x262;, &#x29B;,
+&#x263;, &#x3B3;, <hi rend='frtail'>&#x3B3;</hi>, <hi rend='bktail'>&#x3B3;</hi>,
+<hi rend='var'>&#x264;</hi>, &#x264;</p>
+<p>h, &#x195;, &#x127;, &#x266;, <hi rend='rtailht'>h</hi>, <hi rend='heng'>h</hi>, &#x267;,
+&#x265;, &#x29C;</p>
+<p>i, &#x131;, &#x268;, &#x26A;, &#x269;, &#x27F;, <hi rend='long'>&#x27F;</hi>,
+&#x285;, <hi rend='raise'>&#x285;</hi></p>
+<p>j, j, &#x29D;, <hi rend='ct-var'>j</hi>,
+&#x25F;, &#x25F;,
+<hi rend='var'>&#x284;</hi>, &#x284;, &#x1D0A;</p>
+<p>k, &#x199;, &#x29E;, <hi rend='sc'>K</hi>, <hi rend='sc'>&#x29E;</hi></p>
+<p>l, &#x26B;, &#x19A;, &#x26C;, &#x26D;, &#x26E;,
+<hi rend='var'>&#x26E;</hi>, <hi rend='lig'>l&#x27E;</hi>, &#x29F;,
+<hi rend='rev'>L</hi>, &#x3BB;, &#x19B;,</p>
+<p>m, &#x271;, <hi rend='lig'>hm</hi>, &#x26F;, &#x270;, &#x1D0D;</p>
+<p>n, <hi rend='frbar'>n</hi>, &#x19E;, ñ, &#x272;, &#x14B;, &#x273;, &#x235;,
+&#x274;</p>
+<p>o, &#x2640;, <hi rend='uncr'>&#x2640;</hi>, &#x298;, <hi rend='var'>&#x298;</hi>, &#x275;,
+ø, &#x153;, &#x276;, &#x254;, &#x254;&#x322;, <hi rend='lig'>&#x254;e</hi>,
+&#x3C9;, <hi rend='inv'>&#x3C9;</hi>, &#x277;, <hi rend='sc'>&#x3A9;</hi></p>
+<p>p, &#x1A5;, <hi rend='lhook'>p</hi>, &#x1D18;, &#x1BF;,
+þ, <hi rend='var1'>þ</hi>, <hi rend='var2'>þ</hi>, <hi rend='var3'>þ</hi>,
+<hi rend='var4'>þ</hi>, &#x278;,</p>
+<p>q, &#x2A0;, <hi rend='lig'>qp</hi>, <hi rend='sc'>Q</hi></p>
+<p>r, &#x27E;, &#x27C;, &#x27D;, &#x279;, &#x27B;,
+&#x27A;, &#x280;, &#x44F;, &#x281;,</p>
+<p>s, &#x161;, &#x282;, &#x283;, <hi rend='doublebar'>&#x283;</hi>, &#x1AA;,
+&#x286;</p>
+<p>t, <hi rend='frhook'>t</hi>, <hi rend='lhook'>t</hi>, &#x288;, &#x1AD;, &#x287;,
+<hi rend='ct-turn'>t</hi>, &#x236;, &#x2A8;, <hi rend='lig'>tc</hi>, &#x2A6;,
+&#x2A7;, &#x3B8;</p>
+<p>u, &#x289;, &#x28A;, &#x1D1C;, <hi rend='turn-sc'>u</hi>,</p>
+<p>v, &#x28B;,</p>
+<p>w, &#x28D;</p>
+<p>x, &#x3C7;</p>
+<p>y, &#x28E;, &#x28F;, &#x2AE;, &#x2AF;</p>
+<p>z, &#x225;, &#x17E;, &#x291;, &#x290;, &#x1BB;, <hi rend='turn'>2</hi>,
+&#x292;, &#x1BA;, &#x293;, &#x1B9;, <hi rend='turn'>3</hi></p>
+<p>UUUUUUUUaU
+nU nU nU
+gU sU sU sU</p>
+<p>p<hi rend='sup'>h</hi> = p&#x2B0;
+k<hi rend='sup'>w</hi>=k&#x2B7; t<hi rend='sup'>j</hi>=t&#x2B2; d<hi rend='sup'>&#x263;</hi>=d&#x2E0;
+d<hi rend='sup'>&#x295;</hi>=d&#x2C1;
+d<hi rend='sup'>n</hi> d<hi rend='sup'>l</hi>=d&#x2E1;</p>
+</unknown>
