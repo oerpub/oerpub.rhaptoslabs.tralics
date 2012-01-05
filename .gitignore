@@ -1,0 +1,6 @@
+# Ignore temp and compiled files
+*~
+*.o
+
+# Ignore tralics compiled binary
+src/tralics
