@@ -10,16 +10,16 @@ http://www-sop.inria.fr/apics/tralics/
 
 Installation
 ============
-Installation is straightforward: 1. Download source code. 2. Compile 3. Use the binary in src/
+Installation is straightforward:
 
+1. Download source code
+    sudo apt-get install git-core g++
+    git clone git://github.com/therealmarv/oerpub.rhaptoslabs.tralics.git
+    cd oerpub.rhaptoslabs.tralics/src
 
-sudo apt-get install git-core g++
+2. Compile source
+    make
 
-Installation steps:
-git clone git://github.com/therealmarv/oerpub.rhaptoslabs.tralics.git
-cd oerpub.rhaptoslabs.tralics/src
-make
-
-Use tralics with:
-./tralics
+3. Copy binary to a path were it is reachable from everywhere
+    sudo cp tralics /usr/bin/
 
