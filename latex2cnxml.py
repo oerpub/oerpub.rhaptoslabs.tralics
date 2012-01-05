@@ -1,17 +1,23 @@
 #! /usr/bin/env python
 import sys
 import os
+import shutil
 import urllib2
 import subprocess
 import libxml2
 import libxslt
 import tempfile
+import glob
+import re
+from PIL import Image
 from lxml import etree
 from zipfile import ZipFile, ZIP_DEFLATED, is_zipfile
 #import magic
 
-current_dir = os.path.dirname(__file__)
+#current_dir = os.path.dirname(__file__) # This does not give the absolute file path
+current_dir = os.path.dirname(os.path.abspath(__file__))
 XSL_LOCATION = os.path.join(current_dir, 'www')
+CNXML_AUTOID_XSL = os.path.join(current_dir, 'www', 'generateIds.xsl')
 
 
 # ============================================
@@ -29,10 +35,14 @@ def writeToGood(binData,strOriginalFileName):
 
     return strFileName
 
+# TODO
+def moveToBad(strFileName):
+    pass
+
 def cleanup(strFileName):
-    bSaveToTemp = true
+    bSaveToTemp = True
     if bSaveToTemp:
-        print ("LaTeX2CNXML Transform", zLOG.INFO, "Removing: %s" % strFileName)
+        print ("LaTeX2CNXML: Removing: %s" % strFileName)
         os.remove(strFileName)
 
 
@@ -75,7 +85,7 @@ def convert(data, original_filename):
     if not is_zipfile(strZipFile):
         #zLOG.LOG("LaTeX2CNXML Transform", zLOG.INFO, "expecting a .zip file and got a " + strExt + " file.")
         print "Latex2CNXML: expecting a .zip file and got a " + strExt + " file."
-        self.moveToBad(strHarvestedFileName)
+        moveToBad(strHarvestedFileName)
         #raise OOoImportError, "Expecting a .zip file containing your .tex and auxiliary files. Instead got a " + strExt + " file.  See the below LaTeX importer instruction page link for help."
         raise Exception, "Expecting a .zip file containing your .tex and auxiliary files. Instead got a " + strExt + " file.  See the below LaTeX importer instruction page link for help." 
 
@@ -92,11 +102,11 @@ def convert(data, original_filename):
              "\t\t'" + strTempWorkingDirectory + "'\n" +
              "\t\t'" + XSL_LOCATION + "'\n" +
              "\t\t'" + CNXML_AUTOID_XSL + "'")
-    exit()
     rc = os.spawnv(os.P_WAIT, strScript, args)
     if rc != 0:
-        zLOG.LOG("LaTeX2CNXML Transform", zLOG.INFO, "LatexImport.bash returned " + str(rc) + " and not zero.")
-        self.moveToBad(strHarvestedFileName)
+        #zLOG.LOG("LaTeX2CNXML Transform", zLOG.INFO, "LatexImport.bash returned " + str(rc) + " and not zero.")
+        print("Latex2CNXML: LatexImport.bash returned " + str(rc) + " and not zero.")
+        moveToBad(strHarvestedFileName)
         strTexFile = strTempWorkingDirectory + '/' + strBaseName + '.tex'
         bGivenTexFile = os.path.isfile(strTexFile)
         if bGivenTexFile:
@@ -105,42 +115,53 @@ def convert(data, original_filename):
             bDivCreated = os.path.isfile(strDviFile)
             bPdfCreated = os.path.isfile(strPdfFile)
             if not bDivCreated:
-                zLOG.LOG("LaTeX2CNXML Transform", zLOG.INFO, "latex in LatexImport.bash failed to create a DVI file.")
+                #zLOG.LOG("LaTeX2CNXML Transform", zLOG.INFO, "latex in LatexImport.bash failed to create a DVI file.")
+                print("LaTeX2CNXML: latex in LatexImport.bash failed to create a DVI file.")
                 if not bPdfCreated:
-                    zLOG.LOG("LaTeX2CNXML Transform", zLOG.INFO, "pdflatex in LatexImport.bash failed to create a PDF file.")
-                    raise OOoImportError, "Unable to latex/pdflatex the source .tex file. See the below LaTeX importer instruction page link and ensure that your .tex file has been properly prepared."
+                    #zLOG.LOG("LaTeX2CNXML Transform", zLOG.INFO, "pdflatex in LatexImport.bash failed to create a PDF file.")
+                    print("LaTeX2CNXML: pdflatex in LatexImport.bash failed to create a PDF file.")
+                    #raise OOoImportError, "Unable to latex/pdflatex the source .tex file. See the below LaTeX importer instruction page link and ensure that your .tex file has been properly prepared."
+                    raise Exception, "Unable to latex/pdflatex the source .tex file. See the below LaTeX importer instruction page link and ensure that your .tex file has been properly prepared."
                 else:
-                    raise OOoImportError, "Import failed. See the below LaTeX importer instruction page link and ensure that your .tex file has been properly prepared."
+                    #raise OOoImportError, "Import failed. See the below LaTeX importer instruction page link and ensure that your .tex file has been properly prepared."
+                    raise Exception, "Import failed. See the below LaTeX importer instruction page link and ensure that your .tex file has been properly prepared."
             else:
-                raise OOoImportError, "Import failed. See the below LaTeX importer instruction page link and ensure that your .tex file has been properly prepared."
+                #raise OOoImportError, "Import failed. See the below LaTeX importer instruction page link and ensure that your .tex file has been properly prepared."
+                raise Exception, "Import failed. See the below LaTeX importer instruction page link and ensure that your .tex file has been properly prepared."
         else:
-            zLOG.LOG("LaTeX2CNXML Transform", zLOG.INFO, "Input zip file did not contain a liked named tex file:" + strTexFile)
-            raise OOoImportError, "The .zip file does not contain a .tex file of the same name. See the below LaTeX importer instruction page link and ensure that your .tex and .zip files have been properly prepared."
+            #zLOG.LOG("LaTeX2CNXML Transform", zLOG.INFO, "Input zip file did not contain a liked named tex file:" + strTexFile)
+            print("LaTeX2CNXML: Input zip file did not contain a liked named tex file:" + strTexFile)
+            #raise OOoImportError, "The .zip file does not contain a .tex file of the same name. See the below LaTeX importer instruction page link and ensure that your .tex and .zip files have been properly prepared."
+            raise Exception, "The .zip file does not contain a .tex file of the same name. See the below LaTeX importer instruction page link and ensure that your .tex and .zip files have been properly prepared."
 
     strCnxmlFile = strTempWorkingDirectory + '/index.cnxml'
     bCnxmlCreated = os.path.isfile(strCnxmlFile)
     if not bCnxmlCreated:
         # defensive code: should never get here. 
         # import script should return a bad rc if it can not create the cnxml file
-        zLOG.LOG("LaTeX2CNXML Transform", zLOG.INFO, "LatexImport.bash did create the cnxml file.")
-        self.moveToBad(strHarvestedFileName)
-        raise OOoImportError, "Import failed. See the below LaTeX importer instruction page link and ensure that your .tex file has been properly prepared."
+        #zLOG.LOG("LaTeX2CNXML Transform", zLOG.INFO, "LatexImport.bash did create the cnxml file.")
+        print("LaTeX2CNXML: LatexImport.bash did create the cnxml file.")
+        moveToBad(strHarvestedFileName)
+        raise Exception, "Import failed. See the below LaTeX importer instruction page link and ensure that your .tex file has been properly prepared."
 
     objFile = open(strCnxmlFile, "r")
     strCnxml = objFile.read()
     objFile.close()
 
     if len(strCnxml) == 0:
-        zLOG.LOG("LaTeX2CNXML Transform", zLOG.INFO, "LatexImport.bash created an empty cnxml file.")
-        self.moveToBad(strHarvestedFileName)
-        raise OOoImportError, "Import failed. See the below LaTeX importer instruction page link and ensure that your .tex file has been properly prepared."
+        #zLOG.LOG("LaTeX2CNXML Transform", zLOG.INFO, "LatexImport.bash created an empty cnxml file.")
+        print("LaTeX2CNXML: LatexImport.bash created an empty cnxml file.")
+        moveToBad(strHarvestedFileName)
+        #raise OOoImportError, "Import failed. See the below LaTeX importer instruction page link and ensure that your .tex file has been properly prepared."
+        raise Exception, "Import failed. See the below LaTeX importer instruction page link and ensure that your .tex file has been properly prepared."
 
     # setting additional module resources (files/images/etc)
     objects = {}   # dictionary of filename:binarydata
 
     listPngFiles = glob.glob(strTempWorkingDirectory + '/*.png')
-    zLOG.LOG("LaTeX2CNXML Transform", zLOG.INFO,
-             str(len(listPngFiles)) + " .png files were found.")
+    #zLOG.LOG("LaTeX2CNXML Transform", zLOG.INFO,
+    #         str(len(listPngFiles)) + " .png files were found.")
+    print("LaTeX2CNXML" + str(len(listPngFiles)) + " .png files were found.")
     for file in listPngFiles:
         (strDirectory, strFile) = os.path.split(file)
         objFile = open(file, 'r')
@@ -157,13 +178,15 @@ def convert(data, original_filename):
                          "original width is " + str(iWidth) + ". --></image>"
             strNewCnxml = strCnxml.replace(strOldImageTag, strNewImageTag);
             if len(strNewCnxml) >  len(strCnxml):
-                zLOG.LOG("LaTeX2CNXML Transform", zLOG.INFO, "adding width parameter to image tag for " + strFile + " file.")
-                # zLOG.LOG("LaTeX2CNXML Transform", zLOG.INFO, "xfroming cnxml from:\n\n" + strOldImageTag + "\n\nto:\n\n" + strNewImageTag)
+                #zLOG.LOG("LaTeX2CNXML Transform", zLOG.INFO, "adding width parameter to image tag for " + strFile + " file.")
+                print("LaTeX2CNXML: adding width parameter to image tag for " + strFile + " file.")
                 strCnxml = strNewCnxml
 
     listEpsFiles = glob.glob(strTempWorkingDirectory + '/*.eps')
-    zLOG.LOG("LaTeX2CNXML Transform", zLOG.INFO,
-             str(len(listEpsFiles)) + " .eps files were found.")
+    #zLOG.LOG("LaTeX2CNXML Transform", zLOG.INFO,
+    #         str(len(listEpsFiles)) + " .eps files were found.")
+    print("LaTeX2CNXML: " + str(len(listEpsFiles)) + " .eps files were found.")
+
     for file in listEpsFiles:
         objFile = open(file, 'r')
         binData = objFile.read()
@@ -178,16 +201,18 @@ def convert(data, original_filename):
     objects[strFile] = binData
     objFile.close
 
-    outdata.setData(strCnxml)
+    #TODO:    
+    #outdata.setData(strCnxml)
 
-    outdata.setSubObjects(objects)
+    #TODO:
+    #outdata.setSubObjects(objects)
 
     # cleanup the temp working directory
     shutil.rmtree(strTempWorkingDirectory);
 
-    self.cleanup(strHarvestedFileName)
+    cleanup(strHarvestedFileName)
 
-    return outdata
+    return strCnxml, objects
 
 
 # ============================================
@@ -195,16 +220,16 @@ def convert(data, original_filename):
 def latex_transform(content, original_filename):
     objects = {}
     #print "Transformiere ne..."
-    convert(content, original_filename)
-    content = "No content"
-    return content, objects
+    cnxml, objects = convert(content, original_filename)
+    return cnxml, objects
 
 def latex_to_cnxml(content, original_filename):
     objects = {}
-    content, objects = latex_transform(content, original_filename)
-    return content, objects
+    cnxml, objects = latex_transform(content, original_filename)
+    return cnxml, objects
 
 if __name__ == "__main__":
     f = open(sys.argv[1])
     content = f.read()
-    print latex_to_cnxml(content, sys.argv[1])
+    cnxml, objects = latex_to_cnxml(content, sys.argv[1])
+    print cnxml

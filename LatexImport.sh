@@ -97,7 +97,8 @@ EOF
 tralicsoutfile=${document}.xml
 # tralics better be in your path!!!
 # /usr/bin/tralics
-tralics -noentnames -math_variant -oe8 "${texfile}" # -noundefmac??? or -noxmlerror???
+# Marvin: Use local path for tralics
+~/Dev/oerpub.rhaptoslabs.tralics/src/tralics -noentnames -math_variant -oe8 "${texfile}" # -noundefmac??? or -noxmlerror???
 if [[ ! -s "${tralicsoutfile}" ]]; then
    echo "tralics failed to create its output xml file."
    exit 255
@@ -154,13 +155,15 @@ sed -ri '/([Ff]ig(ure|\.)|[Tt]able|[Ss]ec(tion|\.))\W*$/N
 
 # xmllint --noout --relaxng /usr/share/xml/cnxml/schema/rng/0.6/cnxml.rng "${tidycnxmlfile}"
 # /usr/local/bin/jing.sh /usr/share/xml/cnxml/schema/rng/0.6/cnxml-jing.rng "${tidycnxmlfile}"
-XML_CATALOG_FILES=/etc/xml/catalog java -jar ${JING_JAR} /usr/share/xml/cnxml/schema/rng/0.7/cnxml-jing.rng "${tidycnxmlfile}"
-rc=$?
-echo "xmllint returned ${rc}."
-if (( rc != 0 )); then
-    echo "produced cnxml can not be validated by xmllint."
-    exit 255
-fi
+
+# Marvin
+#XML_CATALOG_FILES=/etc/xml/catalog java -jar ${JING_JAR} /usr/share/xml/cnxml/schema/rng/0.7/cnxml-jing.rng "${tidycnxmlfile}"
+#rc=$?
+#echo "xmllint returned ${rc}."
+#if (( rc != 0 )); then
+#    echo "produced cnxml can not be validated by xmllint."
+#    exit 255
+#fi
 
 # Step #11 - create an import friendly file
 

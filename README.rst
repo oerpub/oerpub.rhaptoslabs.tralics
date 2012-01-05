@@ -13,7 +13,7 @@ Installation
 Installation is straightforward: 1. Download source code. 2. Compile 3. Use the binary in src/
 
 
-sudo apt-get install git-core g++
+sudo apt-get install git-core g++ xsltproc texlive-full imagemagick python-imaging
 
 Installation steps:
 git clone git://github.com/therealmarv/oerpub.rhaptoslabs.tralics.git

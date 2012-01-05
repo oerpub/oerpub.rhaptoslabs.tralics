@@ -1,0 +1,187 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<manifest xmlns = "http://www.imsglobal.org/xsd/imscp_v1p1"
+          xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:tal = "http://xml.zope.org/namespaces/tal"
+          xsi:schemaLocation = "http://www.imsglobal.org/xsd/imscp_v1p1 http://www.imsglobal.org/xsd/imscp_v1p1.xsd
+                                http://ltsc.ieee.org/xsd/LOM http://ltsc.ieee.org/xsd/lomv1.0/lom.xsd"
+          identifier="Rhaptos-Module-unrendered"
+          version="IMS CP 1.1.4"
+          tal:attributes="identifier string:Rhaptos-Module-${options/modulename}">
+        <metadata>
+                <schema>IMS Content</schema>
+                <schemaversion>1.1.4</schemaversion>
+                
+                <general>
+                    <title>
+                      <string language="en" tal:content="options/title">The Title of the Object</string>
+                    </title>
+                    <language tal:content="options/language">en</language>
+                    <description>
+                      <string language="en" tal:content="options/description"></string>
+                    </description>
+                    <keyword tal:repeat="keyword options/keywords">
+                      <string language="en" tal:content="keyword">keyword</string>
+                    </keyword>
+                    <structure>
+                        <source>LOMv1.0</source>
+                        <value>atomic</value>
+                    </structure>
+                    <aggregationLevel>
+                        <source>LOMv1.0</source>
+                        <value>2</value>
+                    </aggregationLevel>
+                </general>
+                
+                <lifeCycle>
+                    <version>
+                      <string language="x-none" tal:content="options/version">1</string>
+                    </version>
+                    <status>
+                      <source>LOMv1.0</source>
+                      <value tal:content="options/status">draft</value>
+                    </status>
+                    <contribute tal:repeat="contributor options/contributors">
+                        <role>
+                          <source>LOMv1.0</source>
+                          <value tal:content="contributor/role">content provider</value>
+                        </role>
+                        <entity tal:content="contributor/entity">vCard for Tom Wason</entity>
+                    </contribute>
+                </lifeCycle>
+                
+                <metaMetadata>
+                    <metadataSchema>IEEE LOM 1.0</metadataSchema>
+                    <language tal:content="options/language">en</language>
+                </metaMetadata>
+                
+                <technical>
+                    <format tal:content="options/mime | default">application/cnxml+xml</format>
+                    <size tal:content="options/size">210000</size>
+                    <location tal:content="options/url">http://cnx.rice.edu/</location>
+                    <requirement>
+                        <orComposite>
+                            <type>
+                              <source>LOMv1.0</source>
+                              <value>browser</value>
+                            </type>
+                            <name>
+                              <source>LOMv1.0</source>
+                              <value>any</value>
+                            </name>
+                        </orComposite>
+                    </requirement>
+                    <!--
+                    <installationRemarks></installationRemarks>
+                    <otherPlatformRequirements></otherPlatformRequirements>
+                    -->
+                </technical>
+                
+                <educational>
+                    <!--
+                    <interactivityType>
+                      <source>LOMv1.0</source>
+                      <value tal:condition="not: options/interactive">expositive</value>
+                      <value tal:condition="options/interactive">mixed</value>
+                    </interactivityType>
+                    -->
+                    <learningResourceType>
+                      <source>LOMv1.0</source>
+                      <value>narrative text</value>
+                    </learningResourceType>
+                    <interactivityLevel>
+                      <source>LOMv1.0</source>
+                      <value>low</value>
+                    </interactivityLevel>
+                    <!--
+                    <semanticDensity>
+                      <source>LOMv1.0</source>
+                      <value>medium</value>
+                     </semanticDensity>
+                     -->
+                     <intendedEndUserRole>
+                       <source>LOMv1.0</source>
+                       <value>learner</value>
+                     </intendedEndUserRole>
+                     <!--
+                     <context>
+                       <source>LOMv1.0</source>
+                       <value>higher education</value>
+                     </context>
+                     -->
+                     <!--
+                     <typicalAgeRange>
+                       <string language="x-none">18-</string>
+                     </typicalAgeRange>
+                     -->
+                     <!--
+                     <difficulty>
+                       <source>LOMv1.0</source>
+                       <value>difficult</value>
+                     </difficulty>
+                     -->
+                     <!--
+                     <typicalLearningTime>
+                         <duration>PT30M</duration>
+                     </typicalLearningTime>
+                     -->
+                     <description>
+                       <string language="en">This is a standalone module that covers a single concept,
+                       which can be grouped into texts for full courses of study.</string>
+                     </description>
+                     <language tal:content="options/userlanguage | options/language | default">en</language>
+                </educational>
+                
+                <rights>
+                    <cost>
+                      <source>LOMv1.0</source>
+                      <value>no</value>
+                    </cost>
+                    <copyrightAndOtherRestrictions>
+                      <source>LOMv1.0</source>
+                      <value>yes</value>
+                    </copyrightAndOtherRestrictions>
+                    <description>
+                      <string language="en" tal:content="options/rights">
+                        Copyright 2005, John Doe, subject to provisions of Creative Commons Attribution License.
+                      </string>
+                    </description>
+                </rights>
+                
+                <!-- could be used for Connexions Related Material, also 'isreferencedby', 'isbasedon', 'isbasisfor'
+                <relation>
+                <kind>
+                  <source>LOMv1.0</source>
+                  <value>references</value>
+                </kind>
+                <resource>
+                    <identifier>
+                      <catalog>Connexions Modules</catalog>
+                      <entry>http://cnx.rice.edu/content/m10000</entry>
+                    </identifier>
+                    <description></description>
+                </resource>
+                </relation>
+                -->
+                
+                <!-- comments on modules could theoretically go here
+                <annotation>
+                </annotation>
+                -->
+                
+                <!-- we have no taxonomic classification yet, I think
+                <classification>
+                </classification>
+                -->
+        </metadata>
+        
+        <organizations default="TOC1">
+        </organizations>
+        
+        <resources>
+            <resource identifier="RESOURCE1" type="other" href="index.cnxml">
+                <metadata />
+                <file href="index.cnxml" tal:repeat="file options/files" tal:attributes="href file" />
+            </resource>
+        </resources>
+
+</manifest>

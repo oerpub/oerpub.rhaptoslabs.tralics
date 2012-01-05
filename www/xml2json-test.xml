@@ -1,0 +1,23 @@
+<metadata 
+  xmlns:bib="http://bibtexml.sf.net/"
+  xmlns:epdcx="http://purl.org/eprint/epdcx/2006-11-16/"
+  xmlns:json="http://www.cnx.org/ns/json-customizations"
+  meta-attr1="1"
+  meta-attr2="2"
+  >
+
+  <language>en</language>
+<a><b>c</b></a>
+<import_authors>d</import_authors>
+<import_authors><?json.force-array?>should be wrapped in an array with the letter d</import_authors>
+
+
+<single-array><?json.force-array?>should-be-wrapped-in-an-array of size 1</single-array>
+
+<single-array-with-other-attributes attr1="a" attr2="b"><?json.force-array?>should-be-wrapped-in-an-array of size 3</single-array-with-other-attributes>
+
+<just-an-empty-array><?json.force-array?></just-an-empty-array>
+<empty-array-with-other-attributes attr1="a" attr2="b"><?json.force-array?></empty-array-with-other-attributes>
+<just-attributes attr1="a" attr2="b"/>
+</metadata>
+
