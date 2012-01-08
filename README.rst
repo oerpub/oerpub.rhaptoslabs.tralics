@@ -26,3 +26,8 @@ Installation is straightforward:
 
     sudo cp tralics /usr/bin/
 
+4. Copy tralics config file settings::
+
+    sudo mkdir -p /usr/lib/tralics/confdir/
+    sudo cp -r confdir /usr/lib/tralics
+
