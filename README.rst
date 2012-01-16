@@ -15,7 +15,7 @@ Installation is straightforward:
 1. Download source code::
 
     sudo apt-get install git-core g++
-    git clone git://github.com/therealmarv/oerpub.rhaptoslabs.tralics.git
+    git clone git://github.com/oerpub/oerpub.rhaptoslabs.tralics.git
 
     cd oerpub.rhaptoslabs.tralics/src
 
@@ -31,4 +31,3 @@ Installation is straightforward:
 
     sudo mkdir -p /usr/lib/tralics/confdir/
     sudo cp -r ../confdir /usr/lib/tralics
-
